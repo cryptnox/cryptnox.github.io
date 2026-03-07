@@ -13,10 +13,10 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 
 ## Documentation
 
-| Project | Description | Link |
-|--------|-------------|------|
-| **cryptnox-sdk-py** | Python SDK for managing smart card wallets via secure communication | [docs-v2.cryptnox.com/cryptnox-sdk-py](https://docs-v2.cryptnox.com/cryptnox-sdk-py/) |
-| **cryptnox-cli** | Command-line interface documentation for managing smart card wallets | [docs-v2.cryptnox.com/cryptnox-cli](https://docs-v2.cryptnox.com/cryptnox-cli/) |
+| Project | Description |
+|--------|-------------|
+| [**cryptnox-sdk-py**](https://docs-v2.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
+| [**cryptnox-cli**](https://docs-v2.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
 
 ---
 
