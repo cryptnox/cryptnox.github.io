@@ -2,7 +2,7 @@
   <img src="https://github.com/user-attachments/assets/6ce54a27-8fb6-48e6-9d1f-da144f43425a"/>
 </p>
 <h3 align="center">cryptnox.github.io</h3>
-<p align="center">Official developer documentation for the Cryptnox ecosystem</p>
+<p align="center">Central hub for Cryptnox technical documentation</p>
 <br/>
 
 [![License: GPLv3](https://img.shields.io/badge/License-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
