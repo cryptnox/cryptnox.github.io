@@ -5,6 +5,9 @@ Cryptnox Product Documentation
 .. toctree::
    :maxdepth: 3
    :caption: CONTENTS
+   :hidden:
+
+   copyright
 
 
 Cryptnox Hardware Wallet

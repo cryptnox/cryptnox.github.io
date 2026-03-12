@@ -29,15 +29,26 @@ html_meta = {
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'basic'
+html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_logo = '_static/cryptnox-logo.png'
 
 html_css_files = [
     'custom.css',
 ]
 
-# Disable sidebar — landing page needs no navigation panel
-html_sidebars = {'**': []}
+html_theme_options = {
+    'analytics_id': 'GT-PJ7HDFB',
+    'logo_only': False,
+    'prev_next_buttons_location': 'none',
+    'style_external_links': False,
+    'style_nav_header_background': '#101f2e',
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 2,
+    'includehidden': True,
+    'titles_only': False,
+}
 
 html_show_sourcelink = False
 html_copy_source = False
