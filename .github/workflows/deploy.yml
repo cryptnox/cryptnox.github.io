@@ -3,6 +3,8 @@ name: Deploy Sphinx to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -38,6 +40,8 @@ jobs:
           path: _site
 
   deploy:
+    # Only deploy on push to main or manual trigger — not on PR builds
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
