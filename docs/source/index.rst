@@ -32,7 +32,7 @@ confidentiality, authentication, and integrity. The card supports SECP256k1 and 
 with ECDSA and BIP340 Schnorr signing, BIP32/SLIP10 hierarchical key derivation, and multiple
 authentication methods including PIN, user key challenge-response, and FIDO.
 
-* **Hardware Wallet Technical Reference** [`View Docs <https://embarquech.github.io/hardware-wallet-doc/introduction.html>`__]
+* **Hardware Wallet Technical Reference** [`View Docs <https://cryptnox.github.io/cryptnox-hardware-wallet/>`__]
 
 
 -------------------------
@@ -88,3 +88,5 @@ Other resources
 
 * `Cryptnox Website <https://www.cryptnox.com>`_
 * `Cryptnox on GitHub <https://github.com/cryptnox>`_
+* `Cryptnox Shop <https://shop.cryptnox.com>`_
+* `Cryptnox Support <https://cryptnox.com/support-contact/>`_

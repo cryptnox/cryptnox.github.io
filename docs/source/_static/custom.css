@@ -1,11 +1,14 @@
-/* ── Typography — matches cryptnox-sdk-py ────────────────────────────── */
-body, .wy-body-for-nav {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* ── Typography ───────────────────────────────────────────────────────── */
+body, html, .wy-body-for-nav {
+    font-family: 'Noto Sans', 'Helvetica Neue', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* ── Headings ─────────────────────────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
     color: #2c3e50;
+    font-family: 'Noto Sans', 'Helvetica Neue', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* ── Links ────────────────────────────────────────────────────────────── */
