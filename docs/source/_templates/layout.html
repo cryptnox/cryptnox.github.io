@@ -75,3 +75,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {% endblock %}
 
+{# ── Sidebar links scroll to index page sections ────────────────────── #}
+{% block scripts %}
+{{ super() }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var indexUrl = '{{ pathto("index") }}';
+  if (indexUrl === '#') indexUrl = '';
+  var onIndexPage = (indexUrl === '');
+
+  var anchorMap = {
+    'hardware-wallet.html': '#cryptnox-hardware-wallet',
+    'cryptnox-cli.html':    '#cryptnox-cli',
+    'cryptnox-sdk.html':    '#cryptnox-sdk-for-python'
+  };
+
+  document.querySelectorAll('.wy-menu-vertical .toctree-l1 > a').forEach(function(a) {
+    var filename = a.getAttribute('href').split('/').pop();
+    var anchor = anchorMap[filename];
+    if (!anchor) return;
+
+    // Rewrite href: anchor-only on index page, index.html#anchor on stub pages
+    a.href = indexUrl + anchor;
+
+    if (onIndexPage) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(anchor);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // pushState updates the URL; then dispatch hashchange so the RTD
+          // theme's reset() picks it up and sets the correct sidebar highlight
+          history.pushState(null, null, anchor);
+          window.dispatchEvent(new Event('hashchange'));
+        }
+      });
+    }
+  });
+
+  // After rewriting hrefs, re-run RTD's reset() so the correct sidebar item
+  // is highlighted when the page loads with a hash in the URL
+  if (onIndexPage && window.location.hash) {
+    window.dispatchEvent(new Event('hashchange'));
+  }
+});
+</script>
+{% endblock %}
+
