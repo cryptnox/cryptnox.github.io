@@ -5,4 +5,4 @@ Cryptnox CLI
 It handles card initialization, secure channel establishment, PIN management, seed generation,
 key derivation, and transaction signing through a straightforward command interface.
 
-`View CLI User Guide <./cryptnox-cli/index.html>`_
+`View CLI User Guide <https://cryptnox.github.io/cryptnox-cli/>`_

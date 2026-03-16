@@ -19,7 +19,7 @@ Cryptnox Hardware Wallet
 certified secure element. It provides hardware-secured private key storage and transaction signing
 for cryptocurrency applications over NFC and contact (T=1) interfaces.
 
-* **Hardware Wallet Technical Reference** [`HTML <./hardware-wallet/index.html>`__]
+* **Hardware Wallet Technical Reference** [`View Docs <https://cryptnox.github.io/cryptnox-hardware-wallet/>`__]
 
 
 -------------------------
@@ -32,7 +32,7 @@ Cryptnox CLI
 It handles card initialization, secure channel establishment, PIN management, seed generation,
 key derivation, and transaction signing through a straightforward command interface.
 
-* **Cryptnox CLI User Guide** [`HTML <./cryptnox-cli/index.html>`__]
+* **Cryptnox CLI User Guide** [`View Docs <https://cryptnox.github.io/cryptnox-cli/>`__]
 
 
 -------------------------
@@ -46,7 +46,7 @@ functionality into their own applications. It provides programmatic access to se
 establishment, APDU communication, key derivation, and signing operations, allowing custom
 wallet software and automation workflows to leverage the card's hardware security.
 
-* **Cryptnox SDK for Python** [`HTML <./cryptnox-sdk-py/index.html>`__]
+* **Cryptnox SDK for Python** [`View Docs <https://cryptnox.github.io/cryptnox-sdk-py/>`__]
 
 
 -------------------------

@@ -273,6 +273,12 @@ a.headerlink { display: none; }
     color: #007bff !important;
 }
 
+/* ── Hide default Sphinx copyright footer ─────────────────────────────── */
+.rst-content footer:not(.cnx-footer),
+div[role="contentinfo"] {
+    display: none;
+}
+
 /* ── Custom footer ────────────────────────────────────────────────────── */
 .cnx-footer {
     border-top: 1px solid #e1e4e5;

@@ -80,16 +80,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{ super() }}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Inject Home link into sidebar
   var menu = document.querySelector('.wy-menu-vertical > ul');
-  if (!menu) return;
-  var li = document.createElement('li');
-  li.className = 'toctree-l1{% if pagename == "index" %} current{% endif %}';
-  var a = document.createElement('a');
-  a.className = 'reference internal';
-  a.href = '{{ pathto("index") }}';
-  a.textContent = 'Home';
-  li.appendChild(a);
-  menu.insertBefore(li, menu.firstChild);
+  if (menu) {
+    var li = document.createElement('li');
+    li.className = 'toctree-l1{% if pagename == "index" %} current{% endif %}';
+    var a = document.createElement('a');
+    a.className = 'reference internal';
+    a.href = '{{ pathto("index") }}';
+    a.textContent = 'Home';
+    li.appendChild(a);
+    menu.insertBefore(li, menu.firstChild);
+  }
+
+  // Move footer into the visible content area
+  var footer = document.querySelector('.cnx-footer');
+  var content = document.querySelector('.wy-nav-content');
+  if (footer && content) {
+    content.appendChild(footer);
+  }
 });
 </script>
 {% endblock %}
