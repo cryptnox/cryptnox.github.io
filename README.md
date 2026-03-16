@@ -5,6 +5,7 @@
 <p align="center">Central hub for Cryptnox technical documentation</p>
 <br/>
 
+[![Documentation status](https://img.shields.io/badge/docs-latest-blue)](https://cryptnox.github.io)
 [![License: GPLv3](https://img.shields.io/badge/License-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 This repository serves as the root of the Cryptnox documentation portal, available at [docs.cryptnox.com](https://docs.cryptnox.com).
@@ -15,7 +16,7 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 
 | Project | Description |
 |--------|-------------|
-| [**cryptnox-hardware-wallet**](https://docs.cryptnox.com/cryptnox-hardware-wallet/) | Technical reference for the Cryptnox JavaCard hardware wallet |
+| [**cryptnox-hardware-wallet**](https://docs.cryptnox.com/cryptnox-hardware-wallet/) | Technical reference for the Cryptnox Hardware Wallet smart cards |
 | [**cryptnox-cli**](https://docs.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
 | [**cryptnox-sdk-py**](https://docs.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
 
