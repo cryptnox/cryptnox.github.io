@@ -7,7 +7,7 @@
 
 [![License: GPLv3](https://img.shields.io/badge/License-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-This repository serves as the root of the Cryptnox documentation portal, available at [docs-v2.cryptnox.com](https://docs-v2.cryptnox.com).
+This repository serves as the root of the Cryptnox documentation portal, available at [docs.cryptnox.com](https://docs.cryptnox.com).
 
 ---
 
@@ -15,8 +15,9 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 
 | Project | Description |
 |--------|-------------|
-| [**cryptnox-cli**](https://docs-v2.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
-| [**cryptnox-sdk-py**](https://docs-v2.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
+| [**cryptnox-hardware-wallet**](https://docs.cryptnox.com/cryptnox-hardware-wallet/) | Technical reference for the Cryptnox JavaCard hardware wallet |
+| [**cryptnox-cli**](https://docs.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
+| [**cryptnox-sdk-py**](https://docs.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
 
 ---
 
@@ -25,17 +26,19 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 Each documentation site is maintained in its own repository and automatically served as a sub-path via **GitHub Pages**:
 
 ```
-docs-v2.cryptnox.com/                  → cryptnox/cryptnox.github.io
-docs-v2.cryptnox.com/cryptnox-cli/     → cryptnox/cryptnox-cli
-docs-v2.cryptnox.com/cryptnox-sdk-py/  → cryptnox/cryptnox-sdk-py
+docs.cryptnox.com/                              → cryptnox/cryptnox.github.io
+docs.cryptnox.com/cryptnox-hardware-wallet/     → cryptnox/cryptnox-hardware-wallet
+docs.cryptnox.com/cryptnox-cli/                 → cryptnox/cryptnox-cli
+docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
 ```
 
 ---
 
 ## Related repositories
 
-- [cryptnox/cryptnox-sdk-py](https://github.com/cryptnox/cryptnox-sdk-py)
+- [cryptnox/cryptnox-hardware-wallet](https://github.com/cryptnox/cryptnox-hardware-wallet)
 - [cryptnox/cryptnox-cli](https://github.com/cryptnox/cryptnox-cli)
+- [cryptnox/cryptnox-sdk-py](https://github.com/cryptnox/cryptnox-sdk-py)
 
 ---
 

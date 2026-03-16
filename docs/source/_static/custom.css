@@ -141,9 +141,8 @@ a.headerlink { display: none; }
     position: relative;
 }
 
-/* ── Card icon — rendered after h2 in RST, reordered first via flex ────── */
+/* ── Card icon — displayed below the section title ───────────────────── */
 .card-icon {
-    order: -1;
     width: 44px;
     height: 44px;
     background: rgba(0, 123, 255, 0.08);
