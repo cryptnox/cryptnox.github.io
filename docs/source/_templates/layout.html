@@ -75,15 +75,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {% endblock %}
 
+{# ── Inject Home link as first sidebar nav item ────────────────────── #}
+{% block scripts %}
+{{ super() }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var menu = document.querySelector('.wy-menu-vertical > ul');
+  if (!menu) return;
+  var li = document.createElement('li');
+  li.className = 'toctree-l1{% if pagename == "index" %} current{% endif %}';
+  var a = document.createElement('a');
+  a.className = 'reference internal';
+  a.href = '{{ pathto("index") }}';
+  a.textContent = 'Home';
+  li.appendChild(a);
+  menu.insertBefore(li, menu.firstChild);
+});
+</script>
+{% endblock %}
+
 {# ── Custom footer ─────────────────────────────────────────────────── #}
 {% block footer %}
 <footer class="cnx-footer">
-  <div class="footer-address">
+  <div class="footer-inner">
     <div class="footer-copyright">
-      <a href="https://docs.cryptnox.com/copyright.html">&copy; Copyright 2026, Cryptnox SA.</a>
+      <span>&copy; Copyright 2026, Cryptnox.</span>
     </div>
-    <div class="footer-flag">
-      <img src="https://docs.cryptnox.com/wp-content/uploads/2025/11/switzerland-flag.png" alt="Switzerland flag">
+    <div class="footer-right">
+      <div class="footer-links">
+        <a href="https://cryptnox.com/legal-notices/">Legal Notice</a>
+        <span class="footer-sep">|</span>
+        <a href="#">Privacy Policy</a>
+        <span class="footer-sep">|</span>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div class="footer-flag">
+        <img src="https://docs.cryptnox.com/wp-content/uploads/2025/11/switzerland-flag.png" alt="Switzerland flag">
+      </div>
     </div>
   </div>
 </footer>
