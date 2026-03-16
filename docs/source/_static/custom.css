@@ -106,67 +106,38 @@ a.headerlink { display: none; }
     margin-bottom: 2rem;
 }
 
-/* ── Cards grid ───────────────────────────────────────────────────────── */
+/* ── Cards container ──────────────────────────────────────────────────── */
 #cryptnox-product-documentation {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 #cryptnox-product-documentation > h1,
 #cryptnox-product-documentation > .toctree-wrapper {
-    grid-column: 1 / -1;
+    width: 100%;
 }
 
 #cryptnox-product-documentation > hr {
     display: none;
 }
 
-/* ── Product cards ────────────────────────────────────────────────────── */
+/* ── Product cards (full-width vertical rows) ─────────────────────────── */
 #cryptnox-hardware-wallet,
 #cryptnox-cli,
 #cryptnox-sdk-for-python {
     background: #fff;
-    border: 1px solid #e1e4e5;
-    border-radius: 8px;
-    padding: 1.75rem;
+    border-bottom: 1px solid #e1e4e5;
+    padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
     position: relative;
-    overflow: hidden;
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
-#cryptnox-hardware-wallet::before,
-#cryptnox-cli::before,
-#cryptnox-sdk-for-python::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #007bff, #fcb770);
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-
-#cryptnox-hardware-wallet:hover,
-#cryptnox-cli:hover,
-#cryptnox-sdk-for-python:hover {
-    border-color: #007bff;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.12);
-    transform: translateY(-2px);
-}
-
-#cryptnox-hardware-wallet:hover::before,
-#cryptnox-cli:hover::before,
-#cryptnox-sdk-for-python:hover::before {
-    opacity: 1;
-}
-
-/* ── Card icon ────────────────────────────────────────────────────────── */
+/* ── Card icon — rendered after h2 in RST, reordered first via flex ────── */
 .card-icon {
+    order: -1;
     width: 44px;
     height: 44px;
     background: rgba(0, 123, 255, 0.08);
@@ -189,12 +160,12 @@ a.headerlink { display: none; }
 #cryptnox-hardware-wallet h2,
 #cryptnox-cli h2,
 #cryptnox-sdk-for-python h2 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     color: #2c3e50;
     border-bottom: none;
     padding-bottom: 0;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
 }
 
 /* ── Card description ─────────────────────────────────────────────────── */
@@ -203,8 +174,9 @@ a.headerlink { display: none; }
 #cryptnox-sdk-for-python p {
     color: #6b7a8a;
     font-size: 0.9rem;
-    line-height: 1.65;
+    line-height: 1.6;
     margin-bottom: 0;
+    max-width: 680px;
 }
 
 /* ── Card link list ───────────────────────────────────────────────────── */
@@ -213,8 +185,8 @@ a.headerlink { display: none; }
 #cryptnox-sdk-for-python ul {
     list-style: none;
     padding-left: 0;
-    margin-top: auto;
-    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
 }
 
 #cryptnox-hardware-wallet ul li,
@@ -251,8 +223,8 @@ a.headerlink { display: none; }
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 #other-resources ul li {
@@ -264,13 +236,14 @@ a.headerlink { display: none; }
 }
 
 #other-resources a {
-    color: #6b7a8a !important;
+    color: #007bff !important;
     font-size: 0.875rem;
     font-weight: 400;
 }
 
 #other-resources a:hover {
-    color: #007bff !important;
+    color: #0056b3 !important;
+    text-decoration: underline;
 }
 
 /* ── Hide default Sphinx copyright footer ─────────────────────────────── */
@@ -279,8 +252,24 @@ div[role="contentinfo"] {
     display: none;
 }
 
-/* ── Custom footer ────────────────────────────────────────────────────── */
+/* ── Card "View Docs" link — Yubico style ─────────────────────────────── */
+#cryptnox-hardware-wallet ul li a,
+#cryptnox-cli ul li a,
+#cryptnox-sdk-for-python ul li a {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+
+/* ── Custom footer (hidden until JS moves it into content area) ────────── */
 .cnx-footer {
+    display: none;
+}
     border-top: 1px solid #e1e4e5;
     padding: 1.25rem 2rem;
     background: #fcfcfc;
@@ -333,12 +322,6 @@ div[role="contentinfo"] {
 }
 
 /* ── Responsive ───────────────────────────────────────────────────────── */
-@media (max-width: 860px) {
-    #cryptnox-product-documentation {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (max-width: 480px) {
     .footer-inner {
         flex-direction: column;
