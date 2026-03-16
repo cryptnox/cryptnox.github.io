@@ -6,4 +6,4 @@ functionality into their own applications. It provides programmatic access to se
 establishment, APDU communication, key derivation, and signing operations, allowing custom
 wallet software and automation workflows to leverage the card's hardware security.
 
-`View SDK Documentation <./cryptnox-sdk-py/index.html>`_
+`View SDK Documentation <https://cryptnox.github.io/cryptnox-sdk-py/>`_

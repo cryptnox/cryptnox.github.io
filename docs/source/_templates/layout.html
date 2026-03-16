@@ -75,21 +75,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {% endblock %}
 
-{# ── Inject Home link as first sidebar nav item ────────────────────── #}
+{# ── Move footer into visible content area ──────────────────────────── #}
 {% block scripts %}
 {{ super() }}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  var menu = document.querySelector('.wy-menu-vertical > ul');
-  if (!menu) return;
-  var li = document.createElement('li');
-  li.className = 'toctree-l1{% if pagename == "index" %} current{% endif %}';
-  var a = document.createElement('a');
-  a.className = 'reference internal';
-  a.href = '{{ pathto("index") }}';
-  a.textContent = 'Home';
-  li.appendChild(a);
-  menu.insertBefore(li, menu.firstChild);
+  var footer = document.querySelector('.cnx-footer');
+  var content = document.querySelector('.wy-nav-content');
+  if (footer && content) {
+    content.appendChild(footer);
+    footer.style.display = 'block';
+  }
 });
 </script>
 {% endblock %}
