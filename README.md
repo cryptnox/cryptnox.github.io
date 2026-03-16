@@ -8,7 +8,7 @@
 [![Documentation status](https://img.shields.io/badge/docs-latest-blue)](https://cryptnox.github.io)
 [![License: GPLv3](https://img.shields.io/badge/License-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-This repository serves as the root of the Cryptnox documentation portal, available at [docs.cryptnox.com](https://docs.cryptnox.com)..
+This repository serves as the root of the Cryptnox documentation portal, available at [docs.cryptnox.com](https://docs.cryptnox.com).
 
 ---
 
