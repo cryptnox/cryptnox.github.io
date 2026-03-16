@@ -73,6 +73,11 @@ th {
     color: #fcb770;
 }
 
+/* ── Sidebar: toctree items indented as subtitles under caption ──────── */
+.wy-menu-vertical .toctree-l1 > a {
+    padding-left: 2.5rem;
+}
+
 /* ── Sidebar menu hover ───────────────────────────────────────────────── */
 .wy-menu-vertical a:hover {
     color: #ffffff !important;
@@ -91,9 +96,10 @@ a.headerlink { display: none; }
 /* ── Hide toctree block on landing page ───────────────────────────────── */
 .toctree-wrapper { display: none; }
 
-/* ── Content area width ───────────────────────────────────────────────── */
+/* ── Content area: wider left margin ─────────────────────────────────── */
 .wy-nav-content {
     max-width: 1100px;
+    padding-left: 8rem;
 }
 
 /* ── Page title (h1) ──────────────────────────────────────────────────── */
@@ -179,19 +185,24 @@ a.headerlink { display: none; }
     max-width: 680px;
 }
 
-/* ── Card link list ───────────────────────────────────────────────────── */
+/* ── Card link list — indented with bullet icons ─────────────────────── */
 #cryptnox-hardware-wallet ul,
 #cryptnox-cli ul,
-#cryptnox-sdk-for-python ul {
-    list-style: none;
-    padding-left: 0;
+#cryptnox-sdk-for-python ul,
+#other-resources ul {
+    list-style: disc !important;
+    padding-left: 1.5rem !important;
+    margin-left: 0 !important;
     margin-top: 0.25rem;
     margin-bottom: 0;
 }
 
 #cryptnox-hardware-wallet ul li,
 #cryptnox-cli ul li,
-#cryptnox-sdk-for-python ul li {
+#cryptnox-sdk-for-python ul li,
+#other-resources ul li {
+    list-style: disc !important;
+    margin-left: 0 !important;
     margin: 0;
 }
 
@@ -246,92 +257,3 @@ a.headerlink { display: none; }
     text-decoration: underline;
 }
 
-/* ── Hide default Sphinx copyright footer ─────────────────────────────── */
-.rst-content footer:not(.cnx-footer),
-div[role="contentinfo"] {
-    display: none;
-}
-
-/* ── Card "View Docs" link — Yubico style ─────────────────────────────── */
-#cryptnox-hardware-wallet ul li a,
-#cryptnox-cli ul li a,
-#cryptnox-sdk-for-python ul li a {
-    color: #007bff;
-    font-weight: 600;
-    font-size: 0.875rem;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-}
-
-
-/* ── Custom footer (hidden until JS moves it into content area) ────────── */
-.cnx-footer {
-    display: none;
-}
-    border-top: 1px solid #e1e4e5;
-    padding: 1.25rem 2rem;
-    background: #fcfcfc;
-}
-
-.footer-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.footer-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer-copyright {
-    font-size: 0.8rem;
-    color: #9ba8b4;
-}
-
-.footer-links {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-}
-
-.footer-links a {
-    color: #9ba8b4;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-.footer-sep {
-    color: #d0d7de;
-}
-
-.footer-flag img {
-    width: 24px;
-    height: 24px;
-    display: block;
-    flex-shrink: 0;
-}
-
-/* ── Responsive ───────────────────────────────────────────────────────── */
-@media (max-width: 480px) {
-    .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-}
