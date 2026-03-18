@@ -2,14 +2,6 @@
 Cryptnox Product Documentation
 ================================
 
-.. toctree::
-   :maxdepth: 3
-   :caption: CONTENTS
-
-   hardware-wallet
-   cryptnox-cli
-   cryptnox-sdk
-
 
 Cryptnox Hardware Wallet
 =========================

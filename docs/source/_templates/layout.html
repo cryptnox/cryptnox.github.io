@@ -84,37 +84,49 @@ document.addEventListener('DOMContentLoaded', function() {
   if (indexUrl === '#') indexUrl = '';
   var onIndexPage = (indexUrl === '');
 
-  var anchorMap = {
-    'hardware-wallet.html': '#cryptnox-hardware-wallet',
-    'cryptnox-cli.html':    '#cryptnox-cli',
-    'cryptnox-sdk.html':    '#cryptnox-sdk-for-python'
-  };
+  var items = [
+    { anchor: '#cryptnox-hardware-wallet', title: 'Cryptnox Hardware Wallet' },
+    { anchor: '#cryptnox-cli',             title: 'Cryptnox CLI' },
+    { anchor: '#cryptnox-sdk-for-python',  title: 'Cryptnox SDK for Python' }
+  ];
 
-  document.querySelectorAll('.wy-menu-vertical .toctree-l1 > a').forEach(function(a) {
-    var filename = a.getAttribute('href').split('/').pop();
-    var anchor = anchorMap[filename];
-    if (!anchor) return;
+  // Inject caption + nav items into the sidebar menu
+  var menu = document.querySelector('.wy-menu-vertical');
+  if (!menu) return;
 
-    // Rewrite href: anchor-only on index page, index.html#anchor on stub pages
-    a.href = indexUrl + anchor;
+  var caption = document.createElement('p');
+  caption.className = 'caption';
+  caption.setAttribute('role', 'heading');
+  caption.innerHTML = '<span class="caption-text">CONTENTS</span>';
 
+  var ul = document.createElement('ul');
+  items.forEach(function(item) {
+    var li = document.createElement('li');
+    li.className = 'toctree-l1';
+    var a = document.createElement('a');
+    a.className = 'reference internal';
+    a.href = indexUrl + item.anchor;
+    a.textContent = item.title;
     if (onIndexPage) {
       a.addEventListener('click', function(e) {
-        var target = document.querySelector(anchor);
+        var target = document.querySelector(item.anchor);
         if (target) {
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          // pushState updates the URL; then dispatch hashchange so the RTD
-          // theme's reset() picks it up and sets the correct sidebar highlight
-          history.pushState(null, null, anchor);
+          history.pushState(null, null, item.anchor);
           window.dispatchEvent(new Event('hashchange'));
         }
       });
     }
+    li.appendChild(a);
+    ul.appendChild(li);
   });
 
-  // After rewriting hrefs, re-run RTD's reset() so the correct sidebar item
-  // is highlighted when the page loads with a hash in the URL
+  menu.innerHTML = '';
+  menu.appendChild(caption);
+  menu.appendChild(ul);
+
+  // Highlight correct item when page loads with a hash
   if (onIndexPage && window.location.hash) {
     window.dispatchEvent(new Event('hashchange'));
   }
