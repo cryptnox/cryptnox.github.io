@@ -3,7 +3,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Cryptnox Product Documentation'
-copyright = '2019 - 2026, Cryptnox SA'
+copyright = '2026, Cryptnox SA'
 author = 'Cryptnox'
 release = '1.0'
 
