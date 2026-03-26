@@ -2,9 +2,13 @@ name: Deploy Sphinx to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'v[0-9]+.[0-9]+.[0-9]+'
   pull_request:
-    branches: [main]
+    branches:
+      - main
+      - 'v[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
 
 permissions:
@@ -21,6 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch all remote branches
+        run: git fetch --all
 
       - uses: actions/setup-python@v5
         with:
@@ -29,8 +38,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build Sphinx
-        run: sphinx-build -b html docs/source _site
+      - name: Build all versions with sphinx-multiversion
+        run: sphinx-multiversion docs/source _site
+
+      - name: Add root redirect to latest version
+        run: |
+          LATEST=$(git tag -l 'v*' --sort=-version:refname | head -1)
+          if [ -z "$LATEST" ]; then
+            LATEST=$(git branch -r --list 'origin/v[0-9]*' | sed 's|.*origin/||' | sort -V | tail -1 | tr -d '[:space:]')
+          fi
+          if [ -z "$LATEST" ]; then LATEST="main"; fi
+          echo "<meta http-equiv=\"refresh\" content=\"0; url=./${LATEST}/\">" > _site/index.html
 
       - name: Add CNAME for custom domain
         run: echo "docs.cryptnox.com" > _site/CNAME
@@ -40,7 +58,7 @@ jobs:
           path: _site
 
   deploy:
-    # Only deploy on push to main or manual trigger — not on PR builds
+    # Only deploy on push to main/version branches or manual trigger — not on PR builds
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     environment:
       name: github-pages

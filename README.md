@@ -43,6 +43,46 @@ docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
 
 ---
 
+## Versioning
+
+Documentation is versioned per card firmware using [sphinx-multiversion](https://holzhaus.github.io/sphinx-multiversion/).
+Each firmware version has a corresponding Git branch named `v{major}.{minor}.{patch}`.
+The `main` branch always reflects the latest development docs.
+
+### URL structure
+
+```
+docs.cryptnox.com/          → redirects to the latest released version
+docs.cryptnox.com/v1.6.1/   → docs for firmware 1.6.1
+docs.cryptnox.com/main/     → latest/development docs
+```
+
+### Adding a new version
+
+```bash
+git checkout main
+git pull
+git checkout -b v1.6.2
+# make any firmware-specific changes to the docs
+git push origin v1.6.2
+```
+
+The CI/CD pipeline automatically builds and deploys the new version alongside all existing versions.
+
+### Updating an existing version
+
+```bash
+git checkout v1.6.1
+# edit docs
+git push origin v1.6.1
+```
+
+### Version selector
+
+Users see a version dropdown at the bottom of the RTD theme sidebar to switch between available versions.
+
+---
+
 ## Get your hardware
 
 Cryptnox smart cards and compatible readers are available at [shop.cryptnox.com](https://shop.cryptnox.com).
