@@ -1,2 +1,4 @@
-sphinx
+sphinx<8
 sphinx-rtd-theme
+sphinx-multiversion
+sphinx-sitemap
