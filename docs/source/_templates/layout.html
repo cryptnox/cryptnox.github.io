@@ -4,20 +4,23 @@
 {% block extrahead %}
 {{ super() }}
 
-<link rel="canonical" href="https://docs.cryptnox.com/" />
+{% set canonical_url = pageurl | replace('index.html', '') if pageurl else 'https://docs.cryptnox.com/' %}
+
+<link rel="canonical" href="{{ canonical_url }}" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://docs.cryptnox.com/" />
+<meta property="og:url" content="{{ canonical_url }}" />
 <meta property="og:title" content="{{ title|striptags }} | Cryptnox Docs" />
 <meta property="og:description" content="Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions." />
 <meta property="og:image" content="https://docs.cryptnox.com/wp-content/uploads/2025/08/Technical-Documentation-1024x538.png" />
-<meta property="og:image:width" content="380" />
-<meta property="og:image:height" content="71" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="538" />
 <meta property="og:site_name" content="Cryptnox Docs" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@CryptnoxTech" />
 <meta name="twitter:title" content="{{ title|striptags }} | Cryptnox Docs" />
 <meta name="twitter:description" content="Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions." />
 <meta name="twitter:image" content="https://docs.cryptnox.com/wp-content/uploads/2025/08/Technical-Documentation-1024x538.png" />
