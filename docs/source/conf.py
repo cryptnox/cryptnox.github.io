@@ -9,7 +9,7 @@ release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 
-extensions = []
+extensions = ['sphinx_multiversion', 'sphinx_sitemap']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -19,6 +19,8 @@ language = 'en'
 # -- SEO meta tags -----------------------------------------------------------
 
 html_baseurl = 'https://docs.cryptnox.com/'
+html_title = 'Cryptnox Docs'
+sitemap_url_scheme = "{link}"
 
 html_meta = {
     'description': 'Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions.',
