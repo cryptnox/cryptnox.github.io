@@ -131,7 +131,10 @@ a.headerlink { display: none; }
 /* ── Product cards (full-width vertical rows) ─────────────────────────── */
 #cryptnox-hardware-wallet,
 #cryptnox-cli,
-#cryptnox-sdk-for-python {
+#cryptnox-sdk-for-python,
+#cryptnox-sdk-for-esp32,
+#cryptnox-sdk-for-arduino,
+#cryptnox-sdk-for-c {
     background: #fff;
     border-bottom: 1px solid #e1e4e5;
     padding: 1.5rem 0;
@@ -165,7 +168,10 @@ a.headerlink { display: none; }
 /* ── Card heading (h2) ────────────────────────────────────────────────── */
 #cryptnox-hardware-wallet h2,
 #cryptnox-cli h2,
-#cryptnox-sdk-for-python h2 {
+#cryptnox-sdk-for-python h2,
+#cryptnox-sdk-for-esp32 h2,
+#cryptnox-sdk-for-arduino h2,
+#cryptnox-sdk-for-c h2 {
     font-size: 1.05rem;
     font-weight: 700;
     color: #2c3e50;
@@ -177,7 +183,10 @@ a.headerlink { display: none; }
 /* ── Card description ─────────────────────────────────────────────────── */
 #cryptnox-hardware-wallet p,
 #cryptnox-cli p,
-#cryptnox-sdk-for-python p {
+#cryptnox-sdk-for-python p,
+#cryptnox-sdk-for-esp32 p,
+#cryptnox-sdk-for-arduino p,
+#cryptnox-sdk-for-c p {
     color: #6b7a8a;
     font-size: 0.9rem;
     line-height: 1.6;
@@ -189,6 +198,9 @@ a.headerlink { display: none; }
 #cryptnox-hardware-wallet ul,
 #cryptnox-cli ul,
 #cryptnox-sdk-for-python ul,
+#cryptnox-sdk-for-esp32 ul,
+#cryptnox-sdk-for-arduino ul,
+#cryptnox-sdk-for-c ul,
 #other-resources ul {
     list-style: disc !important;
     padding-left: 1.5rem !important;
@@ -200,6 +212,9 @@ a.headerlink { display: none; }
 #cryptnox-hardware-wallet ul li,
 #cryptnox-cli ul li,
 #cryptnox-sdk-for-python ul li,
+#cryptnox-sdk-for-esp32 ul li,
+#cryptnox-sdk-for-arduino ul li,
+#cryptnox-sdk-for-c ul li,
 #other-resources ul li {
     list-style: disc !important;
     margin-left: 0 !important;
@@ -208,7 +223,10 @@ a.headerlink { display: none; }
 
 #cryptnox-hardware-wallet ul li p,
 #cryptnox-cli ul li p,
-#cryptnox-sdk-for-python ul li p {
+#cryptnox-sdk-for-python ul li p,
+#cryptnox-sdk-for-esp32 ul li p,
+#cryptnox-sdk-for-arduino ul li p,
+#cryptnox-sdk-for-c ul li p {
     margin: 0;
     color: #6b7a8a;
 }
