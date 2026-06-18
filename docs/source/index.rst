@@ -37,9 +37,10 @@ Cryptnox CLI
      </svg>
    </div>
 
-*Cryptnox CLI* is a command-line tool for interacting with Cryptnox smartcards from the terminal.
-It handles card initialization, secure channel establishment, PIN management, seed generation,
-key derivation, and transaction signing through a straightforward command interface.
+*Cryptnox CLI* brings full smartcard control to the terminal, handling card initialization, secure
+channel setup, PIN management, seed generation, key derivation, and transaction signing through a
+single command interface. Every operation is available as a scriptable command, making it equally
+suited to interactive use, provisioning, and automation.
 
 * **Cryptnox CLI User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-cli/>`__]
 
@@ -59,10 +60,10 @@ Cryptnox SDK for Python
      </svg>
    </div>
 
-*Cryptnox SDK for Python* is a library that enables developers to integrate Cryptnox smartcard
-functionality into their own applications. It provides programmatic access to secure channel
-establishment, APDU communication, key derivation, and signing operations, allowing custom
-wallet software and automation workflows to leverage the card's hardware security.
+*Cryptnox SDK for Python* brings Cryptnox smartcard support to the Python ecosystem, surfacing
+secure channel, APDU exchange, key derivation, and signing through a clean Python API. It integrates
+directly into desktop wallets, backend services, and automation workflows, adding hardware-secured
+keys to any Python application.
 
 * **Cryptnox SDK for Python** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-py/>`__]
 
@@ -90,10 +91,10 @@ Cryptnox SDK for ESP32
      </svg>
    </div>
 
-*Cryptnox SDK for ESP32* is a library that enables developers to integrate Cryptnox smartcard
-functionality into ESP32-based projects. It provides programmatic access to secure channel
-establishment, APDU communication, key derivation, and signing operations, allowing embedded
-firmware to leverage the card's hardware security.
+*Cryptnox SDK for ESP32* brings Cryptnox smartcard support to the ESP-IDF ecosystem, wrapping secure
+channel, APDU exchange, key derivation, and signing into a ready-to-use component for the ESP32's
+Wi-Fi/Bluetooth SoCs. Connected firmware gains hardware-secured key storage without ever handling the
+card protocol directly.
 
 * **Cryptnox SDK for ESP32** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-esp32/>`__]
 
@@ -116,10 +117,10 @@ Cryptnox SDK for Arduino
      </svg>
    </div>
 
-*Cryptnox SDK for Arduino* is a library that enables developers to integrate Cryptnox smartcard
-functionality into Arduino sketches. It provides programmatic access to secure channel
-establishment, APDU communication, key derivation, and signing operations, allowing microcontroller
-projects to leverage the card's hardware security.
+*Cryptnox SDK for Arduino* packages Cryptnox smartcard support as an Arduino library, exposing secure
+channel, APDU exchange, key derivation, and signing through a sketch-friendly API. Installable
+directly through the Arduino IDE and Library Manager, it adds hardware-secured keys to any board in
+just a few lines of code.
 
 * **Cryptnox SDK for Arduino** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-arduino/>`__]
 
@@ -139,10 +140,10 @@ Cryptnox SDK for C++
      </svg>
    </div>
 
-*Cryptnox SDK for C++* is a library that enables developers to integrate Cryptnox smartcard
-functionality into native C++ applications. It provides programmatic access to secure channel
-establishment, APDU communication, key derivation, and signing operations, allowing cross-platform
-software to leverage the card's hardware security.
+*Cryptnox SDK for C++* is the portable core at the heart of Cryptnox's embedded SDKs, implementing
+secure channel, APDU exchange, key derivation, and signing in platform-neutral C++. Porting Cryptnox
+support to a new native platform requires only a platform-specific transport layer built on top of
+it.
 
 * **Cryptnox SDK for C++** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-cpp/>`__]
 
