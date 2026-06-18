@@ -39,8 +39,7 @@ Cryptnox CLI
 
 *Cryptnox CLI* brings full smartcard control to the terminal, handling card initialization, secure
 channel setup, PIN management, seed generation, key derivation, and transaction signing through a
-single command interface. Every operation is available as a scriptable command, making it equally
-suited to interactive use, provisioning, and automation.
+single command interface.
 
 * **Cryptnox CLI User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-cli/>`__]
 
