@@ -77,16 +77,8 @@ Cryptnox SDK for ESP32
 
    <div class="card-icon">
      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-       <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
-       <rect x="9" y="9" width="6" height="6"/>
-       <line x1="9" y1="1" x2="9" y2="4"/>
-       <line x1="15" y1="1" x2="15" y2="4"/>
-       <line x1="9" y1="20" x2="9" y2="23"/>
-       <line x1="15" y1="20" x2="15" y2="23"/>
-       <line x1="20" y1="9" x2="23" y2="9"/>
-       <line x1="20" y1="14" x2="23" y2="14"/>
-       <line x1="1" y1="9" x2="4" y2="9"/>
-       <line x1="1" y1="14" x2="4" y2="14"/>
+       <polyline points="16 18 22 12 16 6"/>
+       <polyline points="8 6 2 12 8 18"/>
      </svg>
    </div>
 
@@ -108,11 +100,8 @@ Cryptnox SDK for Arduino
 
    <div class="card-icon">
      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-       <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-       <circle cx="8.5" cy="8.5" r="1.5"/>
-       <circle cx="15.5" cy="15.5" r="1.5"/>
-       <path d="M8.5 10v3.5h3.5"/>
-       <path d="M12 8.5h3.5V12"/>
+       <polyline points="16 18 22 12 16 6"/>
+       <polyline points="8 6 2 12 8 18"/>
      </svg>
    </div>
 
