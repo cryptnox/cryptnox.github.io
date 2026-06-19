@@ -129,9 +129,9 @@ Cryptnox SDK for C++
    </div>
 
 *Cryptnox SDK for C++* is the portable core at the heart of Cryptnox's embedded SDKs, implementing
-secure channel, APDU exchange, key derivation, and signing in platform-neutral C++. Porting Cryptnox
-support to a new native platform requires only a platform-specific transport layer built on top of
-it.
+secure channel, APDU exchange, key derivation, and signing in platform-neutral C++. It ships no
+transport driver, crypto backend, or logging output, so porting Cryptnox support to a new native
+platform means supplying those platform-specific pieces and building on top of the core.
 
 * **Cryptnox SDK for C++** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-cpp/>`__]
 
