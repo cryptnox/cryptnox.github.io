@@ -2,6 +2,10 @@
 Cryptnox Product Documentation
 ================================
 
+.. only:: html
+
+   📄 `Download the full documentation as PDF <cryptnox-docs.pdf>`__
+
 
 Cryptnox Hardware Wallet
 =========================
@@ -14,6 +18,11 @@ Cryptnox Hardware Wallet
        <line x1="1" y1="10" x2="23" y2="10"/>
      </svg>
    </div>
+
+.. only:: latex
+
+   .. image:: _static/icon-hw.png
+      :height: 40px
 
 *Cryptnox Hardware Wallet* is a JavaCard Open Platform 3 smartcard with an EAL6+ Common Criteria
 certified secure element. It provides hardware-secured private key storage and transaction signing
@@ -37,6 +46,11 @@ Cryptnox CLI
      </svg>
    </div>
 
+.. only:: latex
+
+   .. image:: _static/icon-cli.png
+      :height: 40px
+
 *Cryptnox CLI* brings full smartcard control to the terminal, handling card initialization, secure
 channel setup, PIN management, seed generation, key derivation, and transaction signing through a
 single command interface.
@@ -58,6 +72,11 @@ Cryptnox SDK for Python
        <polyline points="8 6 2 12 8 18"/>
      </svg>
    </div>
+
+.. only:: latex
+
+   .. image:: _static/icon-sdk.png
+      :height: 40px
 
 *Cryptnox SDK for Python* brings Cryptnox smartcard support to the Python ecosystem, surfacing
 secure channel, APDU exchange, key derivation, and signing through a clean Python API. It integrates
@@ -82,6 +101,11 @@ Cryptnox SDK for ESP32
      </svg>
    </div>
 
+.. only:: latex
+
+   .. image:: _static/icon-sdk.png
+      :height: 40px
+
 *Cryptnox SDK for ESP32* brings Cryptnox smartcard support to the ESP-IDF ecosystem, wrapping secure
 channel, APDU exchange, key derivation, and signing into a ready-to-use component for the ESP32's
 Wi-Fi/Bluetooth SoCs. Connected firmware gains hardware-secured key storage without ever handling the
@@ -105,6 +129,11 @@ Cryptnox SDK for Arduino
      </svg>
    </div>
 
+.. only:: latex
+
+   .. image:: _static/icon-sdk.png
+      :height: 40px
+
 *Cryptnox SDK for Arduino* packages Cryptnox smartcard support as an Arduino library, exposing secure
 channel, APDU exchange, key derivation, and signing through a sketch-friendly API. Installable
 directly through the Arduino IDE and Library Manager, it adds hardware-secured keys to any board in
@@ -127,6 +156,11 @@ Cryptnox SDK for C++
        <polyline points="8 6 2 12 8 18"/>
      </svg>
    </div>
+
+.. only:: latex
+
+   .. image:: _static/icon-sdk.png
+      :height: 40px
 
 *Cryptnox SDK for C++* is the portable core at the heart of Cryptnox's embedded SDKs, implementing
 secure channel, APDU exchange, key derivation, and signing in platform-neutral C++. It ships no

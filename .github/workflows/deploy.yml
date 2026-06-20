@@ -32,6 +32,24 @@ jobs:
       - name: Build Sphinx
         run: sphinx-build -b html docs/source _site
 
+      - name: Install LaTeX for PDF
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            latexmk texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended tex-gyre
+
+      - name: Build PDF (pdflatex)
+        run: |
+          sphinx-build -M latexpdf docs/source docs/_build
+          cp docs/_build/latex/cryptnox-docs.pdf _site/cryptnox-docs.pdf
+
+      - name: Upload PDF artifact (for PR review)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cryptnox-docs-pdf
+          path: docs/_build/latex/cryptnox-docs.pdf
+
       - name: Add CNAME for custom domain
         run: echo "docs.cryptnox.com" > _site/CNAME
 
