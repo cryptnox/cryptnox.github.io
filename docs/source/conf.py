@@ -33,7 +33,7 @@ html_meta = {
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-html_logo = '_static/cryptnox-logo.png'
+html_logo = '_static/cryptnox-logo.svg'
 html_favicon = '_static/favicon.png'
 
 html_css_files = [

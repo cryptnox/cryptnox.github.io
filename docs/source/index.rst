@@ -19,7 +19,7 @@ Cryptnox Hardware Wallet
 certified secure element. It provides hardware-secured private key storage and transaction signing
 for cryptocurrency applications over NFC and contact (T=1) interfaces.
 
-* **Hardware Wallet Technical Reference** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/>`__]
+* **Hardware Wallet Technical Reference** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/cryptnox-hardware-wallet.pdf>`__]
 
 
 -------------------------
@@ -41,7 +41,7 @@ Cryptnox CLI
 channel setup, PIN management, seed generation, key derivation, and transaction signing through a
 single command interface.
 
-* **Cryptnox CLI User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-cli/>`__]
+* **Cryptnox CLI User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-cli/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-cli/cryptnox-cli.pdf>`__]
 
 
 -------------------------
@@ -64,7 +64,7 @@ secure channel, APDU exchange, key derivation, and signing through a clean Pytho
 directly into desktop wallets, backend services, and automation workflows, adding hardware-secured
 keys to any Python application.
 
-* **Cryptnox SDK for Python** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-py/>`__]
+* **Cryptnox SDK for Python** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-py/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-sdk-py/cryptnox-sdk-py.pdf>`__]
 
 
 -------------------------
@@ -87,7 +87,7 @@ channel, APDU exchange, key derivation, and signing into a ready-to-use componen
 Wi-Fi/Bluetooth SoCs. Connected firmware gains hardware-secured key storage without ever handling the
 card protocol directly.
 
-* **Cryptnox SDK for ESP32** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-esp32/>`__]
+* **Cryptnox SDK for ESP32** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-esp32/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-sdk-esp32/cryptnox-sdk-esp32.pdf>`__]
 
 
 -------------------------
@@ -110,7 +110,7 @@ channel, APDU exchange, key derivation, and signing through a sketch-friendly AP
 directly through the Arduino IDE and Library Manager, it adds hardware-secured keys to any board in
 just a few lines of code.
 
-* **Cryptnox SDK for Arduino** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-arduino/>`__]
+* **Cryptnox SDK for Arduino** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-arduino/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-sdk-arduino/cryptnox-sdk-arduino.pdf>`__]
 
 
 -------------------------
@@ -133,7 +133,7 @@ secure channel, APDU exchange, key derivation, and signing in platform-neutral C
 transport driver, crypto backend, or logging output, so porting Cryptnox support to a new native
 platform means supplying those platform-specific pieces and building on top of the core.
 
-* **Cryptnox SDK for C++** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-cpp/>`__]
+* **Cryptnox SDK for C++** [`HTML <https://docs.cryptnox.com/cryptnox-sdk-cpp/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-sdk-cpp/cryptnox-sdk-cpp.pdf>`__]
 
 
 -------------------------
