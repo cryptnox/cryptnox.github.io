@@ -19,7 +19,8 @@ Cryptnox Hardware Wallet
 certified secure element. It provides hardware-secured private key storage and transaction signing
 for cryptocurrency applications over NFC and contact (T=1) interfaces.
 
-* **Hardware Wallet Technical Reference** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/cryptnox-hardware-wallet.pdf>`__]
+* **Hardware Wallet Technical Reference v2.0** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/cryptnox-hardware-wallet.pdf>`__]
+* **Hardware Wallet Technical Reference v1.6** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/cryptnox-hardware-wallet.pdf>`__]
 
 
 -------------------------
