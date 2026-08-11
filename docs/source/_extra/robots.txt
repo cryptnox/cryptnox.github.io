@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.cryptnox.com/sitemap.xml
+Sitemap: https://docs.cryptnox.com/sitemap-docs.xml

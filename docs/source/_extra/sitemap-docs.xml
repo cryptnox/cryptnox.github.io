@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://docs.cryptnox.com/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/cryptnox-hardware-wallet-v2.0.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/cryptnox-hardware-wallet-v1.6.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-cli/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-cli/cryptnox-cli.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-py/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-py/cryptnox-sdk-py.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-esp32/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-esp32/cryptnox-sdk-esp32.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-arduino/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-arduino/cryptnox-sdk-arduino.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-cpp/</loc></url>
+  <url><loc>https://docs.cryptnox.com/cryptnox-sdk-cpp/cryptnox-sdk-cpp.pdf</loc></url>
+  <url><loc>https://docs.cryptnox.com/genindex.html</loc></url>
+</urlset>
