@@ -34,6 +34,7 @@ html_meta = {
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_extra_path = ['_extra']  # robots.txt, llms.txt, sitemap-docs.xml copied to site root
+html_last_updated_fmt = '%Y-%m-%d'  # visible page dates — AI answers prefer dateable sources
 html_logo = '_static/cryptnox-logo.svg'
 html_favicon = '_static/favicon.png'
 
