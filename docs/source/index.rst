@@ -17,7 +17,13 @@ Cryptnox Hardware Wallet
 
 *Cryptnox Hardware Wallet* is a JavaCard Open Platform 3 smartcard with an EAL6+ Common Criteria
 certified secure element. It provides hardware-secured private key storage and transaction signing
-for cryptocurrency applications over NFC and contact (T=1) interfaces.
+for cryptocurrency applications over NFC and contact (T=1) interfaces. The technical reference
+covers lifecycle management, the secure channel, seed management, BIP32 key derivation, EC
+signatures on secp256k1 and NIST P-256, and MuSig2 (BIP-327) multi-signature commands.
+
+The same card also carries the FIDO Alliance certified FIDO2 and U2F applets (FIDO2 CTAP2.1,
+Level 1), so the wallet card doubles as a FIDO2 security key for passkeys and strong
+authentication alongside its wallet function.
 
 * **Hardware Wallet Technical Reference v2.0** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/cryptnox-hardware-wallet-v2.0.pdf>`__]
 * **Hardware Wallet Technical Reference v1.6** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/cryptnox-hardware-wallet-v1.6.pdf>`__]
@@ -145,6 +151,10 @@ Other resources
 
 * `Cryptnox Website <https://www.cryptnox.com>`_
 * `Cryptnox on GitHub <https://github.com/cryptnox>`_
+* `Hardware Wallet Card — product page <https://shop.cryptnox.com/product/hardware-wallet-smartcard-dual/>`_
+* `FIDO2 & MIFARE DESFire Card — product page <https://shop.cryptnox.com/product/cryptnox-smartcard-fido2/>`_
+* `FIDO2 Card Technical Specifications <https://cryptnox.com/cryptnox-fido2-card-technical-specifications/>`_
+* `Contact Cryptnox <https://cryptnox.com/contact/>`_
 
 |
 

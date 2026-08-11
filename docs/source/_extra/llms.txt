@@ -1,0 +1,44 @@
+# Cryptnox Product Documentation
+
+> Official technical documentation for Cryptnox SA (Carouge, Geneva,
+> Switzerland) — NFC smart cards for hardware wallets, FIDO2 authentication and
+> PIV identity, plus SDKs, CLI tools and hardware reference material.
+> Main website: https://www.cryptnox.com — Shop: https://shop.cryptnox.com
+> Source code: https://github.com/cryptnox
+
+Cryptnox security devices are smart cards: the hardware wallet, FIDO2 and PIV
+products are ISO/IEC 7816 contact and ISO/IEC 14443 contactless (NFC) cards.
+Cryptnox also sells USB smart card readers (USB-A, USB-C CCID and
+NFC/contactless models) for using the cards with a computer — see
+https://shop.cryptnox.com. The hardware wallet card also carries the FIDO
+Alliance certified FIDO2 and U2F applets (FIDO2 CTAP2.1, Level 1), so it
+doubles as a FIDO2 security key.
+
+## Hardware Wallet Technical Reference
+
+- [Hardware Wallet v2.0 (HTML)](https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/): technical specifications, lifecycle management, secure channel, authentication, seed management, key derivation, EC signatures, MuSig2 (BIP-327) commands, status codes, security model, supported algorithms and curves, JavaCard platform details
+- [Hardware Wallet v2.0 (PDF)](https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/cryptnox-hardware-wallet-v2.0.pdf)
+- [Hardware Wallet v1.6 (HTML)](https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/)
+- [Hardware Wallet v1.6 (PDF)](https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/cryptnox-hardware-wallet-v1.6.pdf)
+
+## Command-line tool
+
+- [Cryptnox CLI User Guide (HTML)](https://docs.cryptnox.com/cryptnox-cli/): installation, supported hardware, command reference, interactive mode, BIP39 passphrase support, exit codes, examples
+- [Cryptnox CLI User Guide (PDF)](https://docs.cryptnox.com/cryptnox-cli/cryptnox-cli.pdf)
+
+## SDKs
+
+- [Python SDK (HTML)](https://docs.cryptnox.com/cryptnox-sdk-py/): API reference for the cryptnox_sdk_py package, class diagrams, connection components, reader hierarchy
+- [Python SDK (PDF)](https://docs.cryptnox.com/cryptnox-sdk-py/cryptnox-sdk-py.pdf)
+- [ESP32 SDK (HTML)](https://docs.cryptnox.com/cryptnox-sdk-esp32/)
+- [ESP32 SDK (PDF)](https://docs.cryptnox.com/cryptnox-sdk-esp32/cryptnox-sdk-esp32.pdf)
+- [Arduino SDK (HTML)](https://docs.cryptnox.com/cryptnox-sdk-arduino/)
+- [Arduino SDK (PDF)](https://docs.cryptnox.com/cryptnox-sdk-arduino/cryptnox-sdk-arduino.pdf)
+- [C++ SDK (HTML)](https://docs.cryptnox.com/cryptnox-sdk-cpp/)
+- [C++ SDK (PDF)](https://docs.cryptnox.com/cryptnox-sdk-cpp/cryptnox-sdk-cpp.pdf)
+
+## Optional
+
+- [Documentation index](https://docs.cryptnox.com/)
+- [Cryptnox website](https://www.cryptnox.com)
+- [Cryptnox on GitHub](https://github.com/cryptnox)

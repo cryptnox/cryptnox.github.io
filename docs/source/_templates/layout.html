@@ -13,9 +13,9 @@
 <meta property="og:url" content="{{ canonical_url }}" />
 <meta property="og:title" content="{{ title|striptags }} | Cryptnox Docs" />
 <meta property="og:description" content="Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions." />
-<meta property="og:image" content="https://docs.cryptnox.com/wp-content/uploads/2025/08/Technical-Documentation-1024x538.png" />
-<meta property="og:image:width" content="1024" />
-<meta property="og:image:height" content="538" />
+<meta property="og:image" content="https://cryptnox.com/wp-content/uploads/2024/07/cropped-Group_17_430x.webp" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
 <meta property="og:site_name" content="Cryptnox Docs" />
 
 <!-- Twitter Card -->
@@ -23,7 +23,7 @@
 <meta name="twitter:site" content="@CryptnoxTech" />
 <meta name="twitter:title" content="{{ title|striptags }} | Cryptnox Docs" />
 <meta name="twitter:description" content="Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions." />
-<meta name="twitter:image" content="https://docs.cryptnox.com/wp-content/uploads/2025/08/Technical-Documentation-1024x538.png" />
+<meta name="twitter:image" content="https://cryptnox.com/wp-content/uploads/2024/07/cropped-Group_17_430x.webp" />
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
@@ -32,18 +32,20 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://docs.cryptnox.com/#organization",
-      "name": "Cryptnox Docs",
+      "@id": "https://cryptnox.com/#organization",
+      "name": "Cryptnox SA",
+      "url": "https://cryptnox.com/",
       "logo": {
         "@type": "ImageObject",
         "@id": "https://docs.cryptnox.com/#logo",
-        "url": "https://docs.cryptnox.com/wp-content/uploads/2025/07/cryptnox-logo.png",
-        "contentUrl": "https://docs.cryptnox.com/wp-content/uploads/2025/07/cryptnox-logo.png",
-        "caption": "Cryptnox Docs",
-        "inLanguage": "en-US",
-        "width": "380",
-        "height": "71"
-      }
+        "url": "https://docs.cryptnox.com/_static/cryptnox-logo.svg",
+        "contentUrl": "https://docs.cryptnox.com/_static/cryptnox-logo.svg",
+        "caption": "Cryptnox"
+      },
+      "sameAs": [
+        "https://shop.cryptnox.com/",
+        "https://github.com/cryptnox"
+      ]
     },
     {
       "@type": "WebSite",
@@ -51,7 +53,7 @@
       "url": "https://docs.cryptnox.com",
       "name": "Cryptnox Docs",
       "alternateName": "Cryptnox",
-      "publisher": { "@id": "https://docs.cryptnox.com/#organization" },
+      "publisher": { "@id": "https://cryptnox.com/#organization" },
       "inLanguage": "en-US"
     },
     {
@@ -61,9 +63,9 @@
       "name": "Cryptnox Product Documentation",
       "description": "Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions.",
       "isPartOf": { "@id": "https://docs.cryptnox.com/#website" },
-      "publisher": { "@id": "https://docs.cryptnox.com/#organization" },
+      "publisher": { "@id": "https://cryptnox.com/#organization" },
       "inLanguage": "en-US",
-      "keywords": "Cryptnox, hardware wallet, CLI, SDK, documentation"
+      "keywords": "Cryptnox, hardware wallet, FIDO2, smart card, secure element, MuSig2, CLI, SDK, documentation"
     }
   ]
 }

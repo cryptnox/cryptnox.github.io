@@ -24,7 +24,7 @@ sitemap_url_scheme = "{link}"
 
 html_meta = {
     'description': 'Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions.',
-    'keywords': 'Cryptnox, hardware wallet, smartcard, JavaCard, CLI, SDK, documentation, BIP32, ECDSA, NFC, secure element',
+    'keywords': 'Cryptnox, hardware wallet, smartcard, JavaCard, CLI, SDK, documentation, BIP32, ECDSA, NFC, secure element, FIDO2, MuSig2, BIP-327, secp256k1',
     'author': 'Cryptnox',
     'robots': 'index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large',
 }
@@ -33,6 +33,7 @@ html_meta = {
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_extra_path = ['_extra']  # robots.txt, llms.txt, sitemap-docs.xml copied to site root
 html_logo = '_static/cryptnox-logo.svg'
 html_favicon = '_static/favicon.png'
 
