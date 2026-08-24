@@ -388,3 +388,144 @@ Every verdict on this page is drawn from the scheme's own published reader requi
 and, where available, from user reports of generic readers in service. Government
 middleware pages are linked inline above. Standards referenced: ISO/IEC 7816, ISO/IEC
 14443, ICAO Doc 9303, NIST SP 800-73, EU Regulation 2019/1157.
+
+
+.. raw:: html
+
+   <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "TechArticle",
+      "@id": "https://docs.cryptnox.com/reader-compatibility.html#article",
+      "headline": "Smart Card Reader Compatibility by Country",
+      "description": "Which national eID and smart cards work with Cryptnox USB smart card readers, country by country, with the official government middleware required for each.",
+      "url": "https://docs.cryptnox.com/reader-compatibility.html",
+      "inLanguage": "en",
+      "dateModified": "2026-08-24",
+      "datePublished": "2026-08-24",
+      "author": {
+       "@type": "Organization",
+       "name": "Cryptnox SA",
+       "url": "https://cryptnox.com/"
+      },
+      "publisher": {
+       "@id": "https://cryptnox.com/#organization"
+      },
+      "mainEntityOfPage": {
+       "@type": "WebPage",
+       "@id": "https://docs.cryptnox.com/reader-compatibility.html"
+      },
+      "about": [
+       {
+        "@type": "Thing",
+        "name": "Smart card reader"
+       },
+       {
+        "@type": "Thing",
+        "name": "National electronic identity card"
+       },
+       {
+        "@type": "Thing",
+        "name": "ISO/IEC 7816"
+       },
+       {
+        "@type": "Thing",
+        "name": "ISO/IEC 14443"
+       },
+       {
+        "@type": "Thing",
+        "name": "PC/SC"
+       },
+       {
+        "@type": "Thing",
+        "name": "Extended APDU"
+       },
+       {
+        "@type": "Thing",
+        "name": "ICAO 9303"
+       },
+       {
+        "@type": "Thing",
+        "name": "Belgian eID"
+       },
+       {
+        "@type": "Thing",
+        "name": "Czech eObčanka"
+       },
+       {
+        "@type": "Thing",
+        "name": "Estonian ID-kaart"
+       },
+       {
+        "@type": "Thing",
+        "name": "German Personalausweis"
+       },
+       {
+        "@type": "Thing",
+        "name": "Polish e-dowód"
+       },
+       {
+        "@type": "Thing",
+        "name": "Dutch UZI-pas"
+       },
+       {
+        "@type": "Thing",
+        "name": "Spanish DNIe"
+       },
+       {
+        "@type": "Thing",
+        "name": "NHS Smartcard"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://docs.cryptnox.com/reader-compatibility.html#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "What kind of card reader do I need for the Belgian eID?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A contact smart card reader with PC/SC support, plus the free eID Middleware from eid.belgium.be. Generic readers work; there is no approved-model requirement."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Which USB card readers work with the Czech eObčanka?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Any reader meeting the Ministry of the Interior's published specification — ISO 7816, CCID, PC/SC, ideally WHQL-certified and plug-and-play. There is no approved-model list."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Why does my reader work in one country but not another?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Three things have to line up: the card's interface (contact or contactless), the reader's specification (PC/SC, extended APDU, voltage class), and the national middleware. In practice the middleware is the most common blocker — it may support only one interface, be restricted to an approved list of reader names, or not be publicly downloadable at all."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do I need extended APDU support?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "For the German Personalausweis, ICAO 9303 travel documents, and any scheme using 3072- or 4096-bit RSA keys, yes. Certificates and signatures at those sizes exceed the 255/256-byte short-APDU limit, and a reader without extended APDU fails on them."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does one reader cover several countries?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "For contact cards, largely yes — Belgium, Czechia, Estonia, Slovakia, Hungary, Latvia, Romania, Portugal, Spain, Finland and the UK/Irish tachograph card all run on a standards-compliant PC/SC contact reader. The middleware differs per country; the hardware does not."
+        }
+       }
+      ]
+     }
+    ]
+   }
+   </script>
