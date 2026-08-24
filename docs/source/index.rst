@@ -146,6 +146,20 @@ platform means supplying those platform-specific pieces and building on top of t
 -------------------------
 
 
+Smart Card Readers
+==================
+
+*Cryptnox USB smart card readers* connect contact (ISO 7816) and contactless (ISO 14443)
+smart cards to Windows, macOS and Linux over USB-C. Both readers support extended APDU,
+which is what national eID schemes and ICAO 9303 travel documents require for certificates
+and signatures larger than the 255/256-byte short-APDU limit.
+
+* **Smart Card Reader Compatibility by Country** [`HTML <https://docs.cryptnox.com/reader-compatibility.html>`__] — national eID and professional card compatibility per country, with the official government middleware required for each
+
+
+-------------------------
+
+
 Other resources
 ===============
 

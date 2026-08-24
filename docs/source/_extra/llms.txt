@@ -14,6 +14,10 @@ https://shop.cryptnox.com. The hardware wallet card also carries the FIDO
 Alliance certified FIDO2 and U2F applets (FIDO2 CTAP2.1, Level 1), so it
 doubles as a FIDO2 security key.
 
+## Smart card reader compatibility by country
+
+- [Smart Card Reader Compatibility by Country](https://docs.cryptnox.com/reader-compatibility.html): which national eID and professional smart cards work with Cryptnox USB contact and contactless readers, country by country, with the official government middleware required for each. Covers Belgium (Belgian eID), Czechia (eObcanka), Estonia (ID-kaart), Germany (Fahrerkarte, Personalausweis/AusweisApp), Hungary, Italy (TS-CNS, CIE), Latvia, Luxembourg, Netherlands (UZI-pas/SafeSign), Poland (e-dowod), Portugal (Cartao de Cidadao), Romania, Slovakia, Spain (DNIe), Sweden (SITHS), Finland (FINeID), UK/Ireland (tachograph, NHS Smartcard), UAE (Emirates ID), US/Canada (CAC/PIV), and ICAO 9303 travel documents. States explicitly what the readers cannot do: 125 kHz cards, iPhone/iPad, on-device PIN entry, and PIV/CAC login over contactless
+
 ## Hardware Wallet Technical Reference
 
 - [Hardware Wallet v2.0 (HTML)](https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/): technical specifications, lifecycle management, secure channel, authentication, seed management, key derivation, EC signatures, MuSig2 (BIP-327) commands, status codes, security model, supported algorithms and curves, JavaCard platform details
