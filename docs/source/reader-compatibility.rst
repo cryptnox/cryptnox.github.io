@@ -382,6 +382,14 @@ standards-compliant PC/SC contact reader. The middleware differs per country; th
 does not.
 
 
+Related
+=======
+
+* :doc:`FIDO2 card compatibility — services and platforms <fido2-compatibility>` — which
+  online services and operating systems work with a Cryptnox FIDO2 card, as a second
+  factor or passwordless, and where extra software is needed.
+
+
 Sources
 =======
 
