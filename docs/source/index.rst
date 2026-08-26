@@ -155,6 +155,7 @@ which is what national eID schemes and ICAO 9303 travel documents require for ce
 and signatures larger than the 255/256-byte short-APDU limit.
 
 * **Smart Card Reader Compatibility by Country** [`HTML <https://docs.cryptnox.com/reader-compatibility.html>`__] — national eID and professional card compatibility per country, with the official government middleware required for each
+* **FIDO2 Card Compatibility — Services and Platforms** [`HTML <https://docs.cryptnox.com/fido2-compatibility.html>`__] — which services and operating systems work with a Cryptnox FIDO2 NFC card, second-factor or passwordless, and where extra software is needed
 
 
 -------------------------
