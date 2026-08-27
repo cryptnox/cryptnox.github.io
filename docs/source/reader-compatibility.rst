@@ -8,7 +8,7 @@
 Smart Card Reader Compatibility by Country
 ==================================================
 
-*Last reviewed: 24 August 2026.*
+*Last reviewed: 27 August 2026.*
 
 This page answers one question, country by country: **will a Cryptnox USB smart card
 reader read my national ID or professional card, and what software do I also need?**
@@ -259,6 +259,59 @@ Finland's FINeID is a contact card and works with the contact reader, using
 `mPollux DigiSign <https://dvv.fi/en/download-card-reader-software>`_ from DVV — note that
 DVV has stated this client is available only until the end of 2026.
 
+Switzerland — health insurance card, SwissPass and the e-ID
+-----------------------------------------------------------
+
+Switzerland produces more wrong expectations than any other country on this page, because
+most of what a Swiss resident carries is **not** a PKI smart card.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 14 14 42
+
+   * - Card
+     - Contact
+     - NFC
+     - Verdict
+   * - **Versichertenkarte / VeKa** (health insurance card)
+     - Yes
+     - No
+     - **Works** — contact reader; professional software
+   * - **SwissPass** (SBB)
+     - No
+     - Yes
+     - Contactless reader, UID only — no certificate to authenticate with
+   * - **Identity card** (Identitätskarte)
+     - No chip
+     - No chip
+     - **No reader applies** — see the 2026 note below
+   * - **SuisseID**
+     - withdrawn
+     - —
+     - Discontinued; successor SwissID is an online account, not a card
+   * - **e-ID** (swiyu wallet)
+     - —
+     - —
+     - Phone app; no card, and no NFC planned at launch
+
+The **Versichertenkarte** is the one genuine Swiss contact smart card. Its chip follows
+`eCH-0064 <https://www.bag.admin.ch/bag/en/home/versicherungen/krankenversicherung/krankenversicherung-versicherte-mit-wohnsitz-in-der-schweiz/versichertenkarte.html>`_
+and ISO/IEC 7816-4, and it carries insurance data plus optional emergency data. Note the
+market: it is read by **medical practice software**, not by a free public download, so this
+is a professional use case rather than a consumer one.
+
+**SwissPass** is a transport credential with ISO/IEC 14443 RFID tags. A contactless reader
+sees its UID; there is no certificate on it, so it cannot be used to sign or log in.
+
+**The Swiss identity card has no chip at all today.** A biometric identity card is planned
+for **2 November 2026**, and it will carry a chip of the same family as the biometric
+passport — ICAO 9303, **contactless** — while a chip-free card remains on offer. Until then
+no reader, of either kind, does anything with a Swiss ID card.
+
+**The federal e-ID is not a card.** It lives in the state
+`swiyu wallet app <https://www.eid.admin.ch/en>`_, its introduction has slipped to around
+the end of 2026, and NFC is not part of the launch design. No reader is involved.
+
 United Kingdom and Ireland
 --------------------------
 
@@ -412,7 +465,7 @@ middleware pages are linked inline above. Standards referenced: ISO/IEC 7816, IS
       "description": "Which national eID and smart cards work with Cryptnox USB smart card readers, country by country, with the official government middleware required for each.",
       "url": "https://docs.cryptnox.com/reader-compatibility.html",
       "inLanguage": "en",
-      "dateModified": "2026-08-24",
+      "dateModified": "2026-08-27",
       "datePublished": "2026-08-24",
       "author": {
        "@type": "Organization",
@@ -485,6 +538,10 @@ middleware pages are linked inline above. Standards referenced: ISO/IEC 7816, IS
        },
        {
         "@type": "Thing",
+        "name": "Swiss Versichertenkarte"
+       },
+       {
+        "@type": "Thing",
         "name": "NHS Smartcard"
        }
       ]
@@ -507,6 +564,14 @@ middleware pages are linked inline above. Standards referenced: ISO/IEC 7816, IS
         "acceptedAnswer": {
          "@type": "Answer",
          "text": "Any reader meeting the Ministry of the Interior's published specification — ISO 7816, CCID, PC/SC, ideally WHQL-certified and plug-and-play. There is no approved-model list."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can a card reader read the Swiss identity card?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. The Swiss identity card carries no chip today, so neither a contact nor a contactless reader does anything with it. A biometric identity card is planned for 2 November 2026 with an ICAO 9303 contactless chip, and a chip-free card remains on offer. The one genuine Swiss contact smart card is the health insurance card (Versichertenkarte), whose chip follows eCH-0064 and is read with professional practice software. SwissPass is a contactless transport credential with no certificate on it, and the federal e-ID is a phone wallet app rather than a card."
         }
        },
        {
