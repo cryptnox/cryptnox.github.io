@@ -131,6 +131,8 @@ a.headerlink { display: none; }
 /* ── Product cards (full-width vertical rows) ─────────────────────────── */
 #cryptnox-hardware-wallet,
 #cryptnox-cli,
+#cryptnox-id-cli,
+#smart-card-readers,
 #cryptnox-sdk-for-python,
 #cryptnox-sdk-for-esp32,
 #cryptnox-sdk-for-arduino,

@@ -69,9 +69,8 @@ Cryptnox ID CLI
    </div>
 
 *Cryptnox ID CLI* manages the Cryptnox ID card family from the terminal: PIV identity
-credentials (SP 800-73) with full personalization, FIDO2/CTAP 2.1 passkeys, MIFARE DESFire
-EV2/EV3 contactless applications including Secure Dynamic Messaging, and verification of the
-card's genuineness attestation — one tool (``cryptnox-id``) for every function on the card.
+credentials, FIDO2 passkeys, MIFARE DESFire contactless applications, and verification of
+the card's genuineness attestation with one tool for every function on the card.
 
 * **Cryptnox ID CLI User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-id-cli/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-id-cli/v1.0/cryptnox-id-cli.pdf>`__]
 
