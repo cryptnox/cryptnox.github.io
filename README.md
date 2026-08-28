@@ -18,6 +18,7 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 |--------|-------------|
 | [**cryptnox-hardware-wallet**](https://docs.cryptnox.com/cryptnox-hardware-wallet/) | Technical reference for Cryptnox Hardware Wallet smart cards |
 | [**cryptnox-cli**](https://docs.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
+| [**cryptnox-id-cli**](https://docs.cryptnox.com/cryptnox-id-cli/) | Command-line interface for the Cryptnox ID card family (PIV, FIDO2, MIFARE DESFire, genuineness) |
 | [**cryptnox-sdk-py**](https://docs.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
 
 ---
@@ -30,6 +31,7 @@ Each documentation site is maintained in its own repository and automatically se
 docs.cryptnox.com/                              → cryptnox/cryptnox.github.io
 docs.cryptnox.com/cryptnox-hardware-wallet/     → cryptnox/cryptnox-hardware-wallet
 docs.cryptnox.com/cryptnox-cli/                 → cryptnox/cryptnox-cli
+docs.cryptnox.com/cryptnox-id-cli/              → cryptnox/cryptnox-id-cli
 docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
 ```
 
@@ -39,6 +41,7 @@ docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
 
 - [cryptnox/cryptnox-hardware-wallet](https://github.com/cryptnox/cryptnox-hardware-wallet)
 - [cryptnox/cryptnox-cli](https://github.com/cryptnox/cryptnox-cli)
+- [cryptnox/cryptnox-id-cli](https://github.com/cryptnox/cryptnox-id-cli)
 - [cryptnox/cryptnox-sdk-py](https://github.com/cryptnox/cryptnox-sdk-py)
 
 ---
