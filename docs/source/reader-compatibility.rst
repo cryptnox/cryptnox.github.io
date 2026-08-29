@@ -69,6 +69,43 @@ readers without extended APDU fail precisely there, and the failure looks like a
 card rather than a broken reader. Both Cryptnox readers support it.
 
 
+Click-to-Tap on the contact reader
+==================================
+
+The contact reader carries a button the contactless reader does not: **Click-to-Tap**. It
+solves one specific problem, and it has no bearing on any national-card verdict below.
+
+FIDO2 and WebAuthn require a *user-presence* check on every authentication — proof that a
+person, and not software running in the background, approved the sign-in. A USB security
+key has a metal touch button for exactly this. A smart card sitting in an ordinary contact
+reader has nothing to touch, so the only gesture left is to pull the card out of the slot
+and push it back in, once per sign-in.
+
+Click-to-Tap replaces that gesture. One press drives the smart-card interface through a
+controlled extraction-and-reinsertion sequence at the protocol level, with no mechanical
+movement of the card, so the card stays in the slot.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 28 72
+
+   * - Requirement
+     - Detail
+   * - Cards
+     - Cryptnox FIDO2 smart cards only. With any other card the device behaves as a
+       standard CCID / PC-SC contact reader.
+   * - Operating system
+     - Windows. On macOS and Linux the button has no effect; the reader itself works
+       normally on all three.
+   * - National eID cards
+     - Not applicable. Click-to-Tap is a FIDO2 feature and does not change whether a
+       government card can be read — that is decided by the country tables below.
+
+The button is patented technology: registered Austrian utility model **GM55114/2025**,
+registered German utility model **No. 202025108028.1**, and United States patent
+application **No. 19/534.472** (pending).
+
+
 How to read the verdicts
 ========================
 
@@ -402,6 +439,8 @@ What these readers cannot do
 * **Contact and contactless at the same time** — these are two separate products.
 * **PIN entry on the reader** — neither has a keypad, so schemes that mandate on-device
   PIN entry are out of scope.
+* **Click-to-Tap with a government card** — the button answers the FIDO2 user-presence
+  prompt for Cryptnox FIDO2 cards on Windows. It has no effect on eID, PIV or CAC sign-in.
 * **Guarantee the government's software.** We can state that the reader meets a scheme's
   published requirements. We cannot promise how a given public-service application behaves.
 
@@ -416,6 +455,11 @@ eid.belgium.be. Generic readers work; there is no approved-model requirement.
 **Which USB card readers work with the Czech eObčanka?**
 Any reader meeting the Ministry of the Interior's published specification — ISO 7816,
 CCID, PC/SC, ideally WHQL-certified and plug-and-play. There is no approved-model list.
+
+**Does the Click-to-Tap button work with my national eID card?**
+No. Click-to-Tap answers the FIDO2 user-presence prompt, and only for Cryptnox FIDO2 smart
+cards on Windows. National eID, PIV and CAC cards are unaffected by it: whether they work
+depends on their interface and their own middleware, exactly as set out above.
 
 **Why does my reader work in one country but not another?**
 Three things have to line up: the card's interface (contact or contactless), the reader's
