@@ -156,6 +156,7 @@ and signatures larger than the 255/256-byte short-APDU limit.
 
 * **Smart Card Reader Compatibility by Country** [`HTML <https://docs.cryptnox.com/reader-compatibility.html>`__] — national eID and professional card compatibility per country, with the official government middleware required for each
 * **FIDO2 Card Compatibility — Services and Platforms** [`HTML <https://docs.cryptnox.com/fido2-compatibility.html>`__] — which services and operating systems work with a Cryptnox FIDO2 NFC card, second-factor or passwordless, and where extra software is needed
+* **Click-to-Tap — FIDO2 User Presence on a Desktop Reader** [`HTML <https://docs.cryptnox.com/click-to-tap.html>`__] — what the Click-to-Tap button does, why FIDO2 sign-in on a contact reader needs it, its requirements, and troubleshooting
 
 
 -------------------------

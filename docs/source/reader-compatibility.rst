@@ -105,6 +105,8 @@ The button is patented technology: registered Austrian utility model **GM55114/2
 registered German utility model **No. 202025108028.1**, and United States patent
 application **No. 19/534.472** (pending).
 
+Full detail, usage steps and troubleshooting: :doc:`click-to-tap`.
+
 
 How to read the verdicts
 ========================
