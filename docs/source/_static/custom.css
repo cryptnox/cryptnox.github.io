@@ -131,6 +131,8 @@ a.headerlink { display: none; }
 /* ── Product cards (full-width vertical rows) ─────────────────────────── */
 #cryptnox-hardware-wallet,
 #cryptnox-cli,
+#cryptnox-id-cli,
+#smart-card-readers,
 #cryptnox-sdk-for-python,
 #cryptnox-sdk-for-esp32,
 #cryptnox-sdk-for-arduino,
@@ -168,6 +170,8 @@ a.headerlink { display: none; }
 /* ── Card heading (h2) ────────────────────────────────────────────────── */
 #cryptnox-hardware-wallet h2,
 #cryptnox-cli h2,
+#cryptnox-id-cli h2,
+#smart-card-readers h2,
 #cryptnox-sdk-for-python h2,
 #cryptnox-sdk-for-esp32 h2,
 #cryptnox-sdk-for-arduino h2,
@@ -183,6 +187,8 @@ a.headerlink { display: none; }
 /* ── Card description ─────────────────────────────────────────────────── */
 #cryptnox-hardware-wallet p,
 #cryptnox-cli p,
+#cryptnox-id-cli p,
+#smart-card-readers p,
 #cryptnox-sdk-for-python p,
 #cryptnox-sdk-for-esp32 p,
 #cryptnox-sdk-for-arduino p,
@@ -197,6 +203,8 @@ a.headerlink { display: none; }
 /* ── Card link list — indented with bullet icons ─────────────────────── */
 #cryptnox-hardware-wallet ul,
 #cryptnox-cli ul,
+#cryptnox-id-cli ul,
+#smart-card-readers ul,
 #cryptnox-sdk-for-python ul,
 #cryptnox-sdk-for-esp32 ul,
 #cryptnox-sdk-for-arduino ul,
@@ -211,6 +219,8 @@ a.headerlink { display: none; }
 
 #cryptnox-hardware-wallet ul li,
 #cryptnox-cli ul li,
+#cryptnox-id-cli ul li,
+#smart-card-readers ul li,
 #cryptnox-sdk-for-python ul li,
 #cryptnox-sdk-for-esp32 ul li,
 #cryptnox-sdk-for-arduino ul li,
@@ -223,6 +233,8 @@ a.headerlink { display: none; }
 
 #cryptnox-hardware-wallet ul li p,
 #cryptnox-cli ul li p,
+#cryptnox-id-cli ul li p,
+#smart-card-readers ul li p,
 #cryptnox-sdk-for-python ul li p,
 #cryptnox-sdk-for-esp32 ul li p,
 #cryptnox-sdk-for-arduino ul li p,

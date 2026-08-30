@@ -54,6 +54,30 @@ single command interface.
 -------------------------
 
 
+Cryptnox ID CLI
+================
+
+.. raw:: html
+
+   <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+       <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+       <circle cx="8" cy="11" r="2.5"/>
+       <line x1="14" y1="9" x2="20" y2="9"/>
+       <line x1="14" y1="13" x2="20" y2="13"/>
+     </svg>
+   </div>
+
+*Cryptnox ID CLI* manages the Cryptnox ID card family from the terminal: PIV identity
+credentials, FIDO2 passkeys, MIFARE DESFire contactless applications, and verification of
+the card's genuineness attestation with one tool for every function on the card.
+
+* **Cryptnox ID CLI User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-id-cli/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-id-cli/v1.0/cryptnox-id-cli.pdf>`__]
+
+
+-------------------------
+
+
 Cryptnox SDK for Python
 =========================
 
@@ -148,6 +172,16 @@ platform means supplying those platform-specific pieces and building on top of t
 
 Smart Card Readers
 ==================
+
+.. raw:: html
+
+   <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+       <rect x="7" y="2" width="10" height="7" rx="1"/>
+       <rect x="2" y="11" width="20" height="9" rx="2"/>
+       <line x1="7" y1="15.5" x2="17" y2="15.5"/>
+     </svg>
+   </div>
 
 *Cryptnox USB smart card readers* connect contact (ISO 7816) and contactless (ISO 14443)
 smart cards to Windows, macOS and Linux over USB-C. Both readers support extended APDU,
