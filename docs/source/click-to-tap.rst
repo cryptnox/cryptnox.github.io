@@ -1,9 +1,6 @@
 :description: What the Cryptnox Click-to-Tap button does, why FIDO2 sign-in on a desktop contact reader needs it, what it requires, and how to troubleshoot it.
 :orphan:
 
-.. meta::
-   :description: What the Cryptnox Click-to-Tap button does, why FIDO2 sign-in on a desktop contact reader needs it, what it requires, and how to troubleshoot it.
-
 ============================================================
 Click-to-Tap: FIDO2 User Presence on a Desktop Reader
 ============================================================

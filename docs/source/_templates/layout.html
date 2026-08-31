@@ -4,7 +4,15 @@
 {% block extrahead %}
 {{ super() }}
 
-{% set canonical_url = pageurl | replace('index.html', '') if pageurl else 'https://docs.cryptnox.com/' %}
+{# Pretty page URL, used for og:url below.
+   The canonical <link> itself is emitted by Sphinx from html_baseurl -- do NOT add a
+   second one here (2026-08-31): two canonicals is an Ahrefs error, and the copy this
+   template used to emit was built with `replace('index.html', '')`, a SUBSTRING replace
+   that mangled every page whose name merely CONTAINS "index" --
+   /genindex.html canonicalised to /gen, which is a 404.
+   Strip only a trailing "/index.html", never the substring. #}
+{% set canonical_url = (pageurl[:-10] if pageurl.endswith('/index.html') else pageurl)
+   if pageurl else 'https://docs.cryptnox.com/' %}
 
 {# Page-specific social description.
    SOURCE: a docinfo field at the very top of the .rst, before the title:
@@ -12,15 +20,18 @@
    NOT the `.. meta::` directive -- docutils renders that straight to HTML and it
    never reaches Sphinx's template context, so meta.get('description') cannot see it.
    Pages with no :description: fall back to the site-wide blurb, unchanged.
-   The same value also feeds <meta name="description"> (added 2026-08-29): the
-   `.. meta::` directive in the .rst files was NOT producing one -- verified live
-   on index, reader-compatibility and fido2-compatibility, all three had none. #}
+   The same value also feeds <meta name="description"> (added 2026-08-29).
+   CORRECTION 2026-08-31: an earlier note here claimed the `.. meta::` directive
+   emits nothing. It does emit -- as `<meta content="..." name="description" />`,
+   with the attributes in the REVERSE order, which is why a grep for
+   `<meta name="description"` missed it. Pages carrying both it and this line shipped
+   TWO meta descriptions (Ahrefs "Multiple meta description tags"), so the directive
+   has been removed from the .rst files. The :description: docinfo field is the only
+   thing needed; do not re-add `.. meta::`. #}
 {% set page_description = (meta.get('description') if meta else None) or
    "Access the official Cryptnox technical documentation. Explore setup guides, features, and integration details for secure and efficient solutions." %}
 
 <meta name="description" content="{{ page_description|e }}" />
-
-<link rel="canonical" href="{{ canonical_url }}" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />

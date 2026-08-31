@@ -1,9 +1,6 @@
 :description: Which national eID and smart cards work with Cryptnox USB smart card readers, country by country, with the official government middleware required for each.
 :orphan:
 
-.. meta::
-   :description: Which national eID and smart cards work with Cryptnox USB smart card readers, country by country, with the official government middleware required for each.
-
 ==================================================
 Smart Card Reader Compatibility by Country
 ==================================================

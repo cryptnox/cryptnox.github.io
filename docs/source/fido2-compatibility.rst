@@ -2,9 +2,6 @@
 
 :orphan:
 
-.. meta::
-   :description: Which services and operating systems work with a Cryptnox FIDO2 NFC card, as second-factor or passwordless sign-in, and where extra software is needed.
-
 =================================================
 FIDO2 Card Compatibility — Services and Platforms
 =================================================
