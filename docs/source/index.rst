@@ -27,6 +27,7 @@ authentication alongside its wallet function.
 
 * **Hardware Wallet Technical Reference v2.0** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/cryptnox-hardware-wallet-v2.0.pdf>`__]
 * **Hardware Wallet Technical Reference v1.6** [`HTML <https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/cryptnox-hardware-wallet-v1.6.pdf>`__]
+* **Blockchain Address Control Attestation** [`HTML <https://docs.cryptnox.com/address-control-attestation.html>`__] — the certificate produced by Cryptnox Wallet identity verification: field-by-field reference, how a relying party verifies one, its EBA/GL/2024/11 method mapping, and the limits of what it attests
 
 
 -------------------------
