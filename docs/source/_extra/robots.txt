@@ -3,3 +3,5 @@ Allow: /
 
 Sitemap: https://docs.cryptnox.com/sitemap.xml
 Sitemap: https://docs.cryptnox.com/sitemap-docs.xml
+Sitemap: https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/sitemap.xml
+Sitemap: https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/sitemap.xml
