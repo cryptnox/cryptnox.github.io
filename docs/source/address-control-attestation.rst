@@ -58,6 +58,12 @@ form.
    `What the card signs`_.
 6. **Issue and seal** — Cryptnox SA issues the PDF and applies its electronic seal.
 
+.. note::
+
+   A Cryptnox card can be used to issue **two attestation certificates in total**. Each
+   certificate covers a single public key, so the second issuance is what lets a holder
+   attest a second key — or replace a certificate they no longer have.
+
 Technical details
 =================
 
@@ -423,6 +429,11 @@ Cryptnox SA does not retain copies of government identity documents, selfie or l
 images, biometric templates, or raw verification material after the attestation process
 completes, apart from transient processing and short-lived security, audit, error,
 anti-abuse and email-delivery logs necessary to operate and secure the service.
+
+Cryptnox SA keeps no copy of the issued certificate either. The PDF delivered to the
+holder is the only one, and it **cannot be re-sent**: a holder who no longer has their copy
+runs the verification again, which issues a new certificate and uses one of the two the
+card allows.
 
 The sealed certificate itself contains personal data, including the identity and the
 blockchain public key or address. Once issued, storing, forwarding or publishing it is the
