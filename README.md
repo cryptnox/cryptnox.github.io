@@ -20,6 +20,10 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 | [**cryptnox-cli**](https://docs.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
 | [**cryptnox-id-cli**](https://docs.cryptnox.com/cryptnox-id-cli/) | Command-line interface for the Cryptnox ID card family (PIV, FIDO2, MIFARE DESFire, genuineness) |
 | [**cryptnox-sdk-py**](https://docs.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
+| [**cryptnox-sdk-esp32**](https://docs.cryptnox.com/cryptnox-sdk-esp32/) | ESP-IDF component bringing Cryptnox smartcard support to ESP32 firmware |
+| [**cryptnox-sdk-arduino**](https://docs.cryptnox.com/cryptnox-sdk-arduino/) | Arduino library for Cryptnox smartcard support on any board |
+| [**cryptnox-sdk-cpp**](https://docs.cryptnox.com/cryptnox-sdk-cpp/) | Portable C++ core at the heart of the Cryptnox embedded SDKs |
+| [**cryptnox-readers**](https://docs.cryptnox.com/cryptnox-readers/) | Compatibility documentation for Cryptnox USB smart card readers (eID by country, FIDO2 services and platforms, Click-to-Tap) |
 
 ---
 
@@ -33,6 +37,10 @@ docs.cryptnox.com/cryptnox-hardware-wallet/     → cryptnox/cryptnox-hardware-w
 docs.cryptnox.com/cryptnox-cli/                 → cryptnox/cryptnox-cli
 docs.cryptnox.com/cryptnox-id-cli/              → cryptnox/cryptnox-id-cli
 docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
+docs.cryptnox.com/cryptnox-sdk-esp32/           → cryptnox/cryptnox-sdk-esp32
+docs.cryptnox.com/cryptnox-sdk-arduino/         → cryptnox/cryptnox-sdk-arduino
+docs.cryptnox.com/cryptnox-sdk-cpp/             → cryptnox/cryptnox-sdk-cpp
+docs.cryptnox.com/cryptnox-readers/             → cryptnox/cryptnox-readers
 ```
 
 ---
@@ -43,6 +51,10 @@ docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
 - [cryptnox/cryptnox-cli](https://github.com/cryptnox/cryptnox-cli)
 - [cryptnox/cryptnox-id-cli](https://github.com/cryptnox/cryptnox-id-cli)
 - [cryptnox/cryptnox-sdk-py](https://github.com/cryptnox/cryptnox-sdk-py)
+- [cryptnox/cryptnox-sdk-esp32](https://github.com/cryptnox/cryptnox-sdk-esp32)
+- [cryptnox/cryptnox-sdk-arduino](https://github.com/cryptnox/cryptnox-sdk-arduino)
+- [cryptnox/cryptnox-sdk-cpp](https://github.com/cryptnox/cryptnox-sdk-cpp)
+- [cryptnox/cryptnox-readers](https://github.com/cryptnox/cryptnox-readers)
 
 ---
 
