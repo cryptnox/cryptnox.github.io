@@ -7,3 +7,4 @@ Sitemap: https://docs.cryptnox.com/cryptnox-hardware-wallet/v2.0/sitemap.xml
 Sitemap: https://docs.cryptnox.com/cryptnox-hardware-wallet/v1.6/sitemap.xml
 Sitemap: https://docs.cryptnox.com/cryptnox-sdk-py/sitemap.xml
 Sitemap: https://docs.cryptnox.com/cryptnox-cli/sitemap.xml
+Sitemap: https://docs.cryptnox.com/cryptnox-readers/sitemap.xml
