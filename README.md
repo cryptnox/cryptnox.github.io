@@ -20,9 +20,9 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 | [**cryptnox-cli**](https://docs.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
 | [**cryptnox-id-cli**](https://docs.cryptnox.com/cryptnox-id-cli/) | Command-line interface for the Cryptnox ID card family (PIV, FIDO2, MIFARE DESFire, genuineness) |
 | [**cryptnox-sdk-py**](https://docs.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
-| [**cryptnox-sdk-esp32**](https://docs.cryptnox.com/cryptnox-sdk-esp32/) | ESP-IDF component bringing Cryptnox smartcard support to ESP32 firmware |
-| [**cryptnox-sdk-arduino**](https://docs.cryptnox.com/cryptnox-sdk-arduino/) | Arduino library for Cryptnox smartcard support on any board |
-| [**cryptnox-sdk-cpp**](https://docs.cryptnox.com/cryptnox-sdk-cpp/) | Portable C++ core at the heart of the Cryptnox embedded SDKs |
+| [**cryptnox-sdk-esp32**](https://docs.cryptnox.com/cryptnox-sdk-esp32/) | ESP32 library for managing Cryptnox smart card wallets, based on the C++ core SDK |
+| [**cryptnox-sdk-arduino**](https://docs.cryptnox.com/cryptnox-sdk-arduino/) | Arduino library for managing Cryptnox smart card wallets, based on the C++ core SDK |
+| [**cryptnox-sdk-cpp**](https://docs.cryptnox.com/cryptnox-sdk-cpp/) | Cross-platform C++ core for Cryptnox embedded libraries |
 
 ---
 
