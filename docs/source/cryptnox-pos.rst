@@ -21,6 +21,16 @@ with the UI, the chain code and the operator setup around it.
 * **API reference (Doxygen):** https://docs.cryptnox.com/cryptnox-pos/
 * **Licence:** LGPL-3.0, or a commercial licence for proprietary use
 
+Step-by-step pages with screenshots: `first-time setup <cryptnox-pos-setup.html>`__ ·
+`take a USDC payment <cryptnox-pos-payment.html>`__ · `settings and the control panel
+<cryptnox-pos-settings.html>`__.
+
+.. figure:: _static/cryptnox-pos/payment-10-approved.png
+   :alt: Terminal screen showing Approved, 1.00 USDC, a shortened transaction hash and a New sale button
+   :width: 240px
+
+   The end of a sale: *Approved* appears only once the transaction is mined.
+
 What it is, and what it is not
 ==============================
 
@@ -236,14 +246,16 @@ accepted anywhere except on the panel.
    * - 3
      - Authorise
      - both
-     - The browser asks to be let in; the operator confirms on the panel. The session then
-       carries a random 128-bit token.
+     - The page shows a four-digit browser number and the terminal shows the same one. If they
+       match, the operator enters the admin code on the panel. The session then carries a random
+       128-bit token. If they do not match, another device is trying to connect.
    * - 4
      - Addresses
      - browser
-     - Payout addresses and token contracts are typed, or **read off a Cryptnox card** with
-       one tap (after its PIN). Every value is displayed on the panel and must be accepted
-       there. Ethereum and Polygon share one address; Tron has its own.
+     - Payout addresses are typed, or **read off a Cryptnox card** with one tap after its PIN:
+       whichever card is tapped, its own addresses are used, so it must be the merchant's card.
+       Each address is displayed on the panel and must be accepted there. Ethereum and Polygon
+       share one address; Tron has its own.
    * - 5
      - Wi-Fi
      - browser
@@ -264,17 +276,20 @@ Consequences worth knowing before deploying one:
   step, and asks for no admin code, because that step cannot move money.
 * **An asset with no payout address of its own is not offered** on the amount screen, and the
   panel says in red when the recipient shown is the firmware's built-in fallback.
-* The same page, reached later from the settings menu, changes everything else: gas caps,
-  production or test networks, firmware updates. The terminal's own settings screen reports
-  and does not edit; brightness is the one exception.
+* The same page, reached later from the control panel (swipe the grey bar at the bottom of the
+  sale screen upwards, enter the admin code; tabs **Screen**, **Wi-Fi**, **Tx**, **About**),
+  changes everything else: gas fees, production or test networks, token contracts, the clock's
+  time zone, firmware updates. The terminal's own tabs report and do not edit; brightness and
+  touch calibration are the exceptions. Details: `settings and the control panel
+  <cryptnox-pos-settings.html>`__.
 
 Taking a payment
 ================
 
-1. **Amount.** The operator types the amount on the keypad (two decimals, up to 9999.99) and
-   picks the asset, then taps **Charge**.
-2. **Review.** The screen shows the amount, the destination address and the token contract in
-   full; **Confirm** or **Cancel**.
+1. **Amount.** The operator picks the network and the coin, types the amount on the keypad (two
+   decimals, up to 9999.99) and taps **Charge**.
+2. **Review.** The screen shows the amount, the destination address, the maximum network fee and
+   the token contract in full; **Confirm** or **Cancel**.
 3. **PIN.** The cardholder enters the card PIN on the on-screen keypad. It is verified before
    signing and wiped from RAM afterwards.
 4. **Tap.** The cardholder holds the card on the PN532. The terminal opens the secure channel
@@ -283,7 +298,8 @@ Taking a payment
    transaction and broadcasts it (*Authorizing*), then polls for the receipt (*Confirming*).
 5. **Approved or Declined.** *Approved* appears only on a mined receipt with status ``0x1``,
    for that transaction hash, to the expected contract, with a transfer to the payee for
-   exactly that amount. **New sale** starts the next one.
+   exactly that amount; the screen shows the amount, the coin and a shortened transaction hash.
+   **New sale** starts the next one. Screens: `take a USDC payment <cryptnox-pos-payment.html>`__.
 
 How long step 4 takes is the chain's block time plus the RPC provider's latency, not the
 terminal's. A terminal with no network time refuses to sign rather than guess: SNTP is
@@ -476,6 +492,9 @@ Frequently asked questions
 Related
 =======
 
+* `First-time setup <cryptnox-pos-setup.html>`__, `take a USDC payment
+  <cryptnox-pos-payment.html>`__ and `settings and the control panel
+  <cryptnox-pos-settings.html>`__: step-by-step pages with screenshots.
 * `cryptnox-pos on GitHub <https://github.com/cryptnox/cryptnox-pos>`__: source code,
   releases, wiring diagram, the config-portal, over-the-air update and security-analysis
   documents.

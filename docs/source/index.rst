@@ -147,6 +147,7 @@ POL, USDC and USDT on Polygon, TRX and USDT on Tron. It is the reference project
 SDK and a reference/educational dev kit, not a tamper-resistant terminal.
 
 * **Cryptnox POS Guide** [`HTML <https://docs.cryptnox.com/cryptnox-pos.html>`__] — parts, wiring, flashing, first-time setup, the payment flow, the secure build and what the dev kit is not
+* **First-time setup** [`HTML <https://docs.cryptnox.com/cryptnox-pos-setup.html>`__] · **Take a USDC payment** [`HTML <https://docs.cryptnox.com/cryptnox-pos-payment.html>`__] · **Settings and the control panel** [`HTML <https://docs.cryptnox.com/cryptnox-pos-settings.html>`__] — step by step, with screenshots
 * **Cryptnox POS Firmware Reference** [`HTML <https://docs.cryptnox.com/cryptnox-pos/>`__] — generated documentation for the firmware
 * **Source code and releases** [`GitHub <https://github.com/cryptnox/cryptnox-pos>`__]
 
