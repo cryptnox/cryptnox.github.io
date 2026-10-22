@@ -23,6 +23,7 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 | [**cryptnox-sdk-esp32**](https://docs.cryptnox.com/cryptnox-sdk-esp32/) | ESP32 library for managing Cryptnox smart card wallets, based on the C++ core SDK |
 | [**cryptnox-sdk-arduino**](https://docs.cryptnox.com/cryptnox-sdk-arduino/) | Arduino library for managing Cryptnox smart card wallets, based on the C++ core SDK |
 | [**cryptnox-sdk-cpp**](https://docs.cryptnox.com/cryptnox-sdk-cpp/) | Cross-platform C++ core for Cryptnox embedded libraries |
+| [**cryptnox-pos**](https://docs.cryptnox.com/cryptnox-pos.html) | Open-source crypto payment terminal on an ESP32 "Cheap Yellow Display" and a PN532 NFC reader, paid by tapping a Cryptnox Hardware Wallet card (reference dev kit for the ESP32 SDK) |
 | [**cryptnox-readers**](https://docs.cryptnox.com/cryptnox-readers/) | Compatibility documentation for Cryptnox USB smart card readers (eID by country, FIDO2 services and platforms, Click-to-Tap) |
 
 ---
@@ -41,6 +42,7 @@ docs.cryptnox.com/cryptnox-sdk-esp32/           → cryptnox/cryptnox-sdk-esp32
 docs.cryptnox.com/cryptnox-sdk-arduino/         → cryptnox/cryptnox-sdk-arduino
 docs.cryptnox.com/cryptnox-sdk-cpp/             → cryptnox/cryptnox-sdk-cpp
 docs.cryptnox.com/cryptnox-readers/             → cryptnox/cryptnox-readers
+docs.cryptnox.com/cryptnox-pos/                 → cryptnox/cryptnox-pos
 ```
 
 ---
@@ -55,6 +57,7 @@ docs.cryptnox.com/cryptnox-readers/             → cryptnox/cryptnox-readers
 - [cryptnox/cryptnox-sdk-arduino](https://github.com/cryptnox/cryptnox-sdk-arduino)
 - [cryptnox/cryptnox-sdk-cpp](https://github.com/cryptnox/cryptnox-sdk-cpp)
 - [cryptnox/cryptnox-readers](https://github.com/cryptnox/cryptnox-readers)
+- [cryptnox/cryptnox-pos](https://github.com/cryptnox/cryptnox-pos)
 
 ---
 

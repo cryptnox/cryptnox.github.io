@@ -125,6 +125,35 @@ card protocol directly.
 -------------------------
 
 
+Cryptnox POS — Open-Source Payment Terminal
+============================================
+
+.. raw:: html
+
+   <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+       <rect x="3" y="2" width="18" height="20" rx="2" ry="2"/>
+       <line x1="7" y1="7" x2="17" y2="7"/>
+       <line x1="7" y1="11" x2="17" y2="11"/>
+       <line x1="7" y1="15" x2="11" y2="15"/>
+     </svg>
+   </div>
+
+*Cryptnox POS* (``cryptnox-pos``) is open-source firmware that turns an ESP32 "Cheap Yellow
+Display" touchscreen board and a PN532 NFC module into a crypto payment terminal. The customer
+taps a Cryptnox Hardware Wallet card, the card signs the transfer in its secure element, and
+the terminal shows *Approved* once the transaction is mined. ETH, USDC and USDT on Ethereum,
+POL, USDC and USDT on Polygon, TRX and USDT on Tron. It is the reference project for the ESP32
+SDK and a reference/educational dev kit, not a tamper-resistant terminal.
+
+* **Cryptnox POS Guide** [`HTML <https://docs.cryptnox.com/cryptnox-pos.html>`__] — parts, wiring, flashing, first-time setup, the payment flow, the secure build and what the dev kit is not
+* **Cryptnox POS Firmware Reference** [`HTML <https://docs.cryptnox.com/cryptnox-pos/>`__] — generated documentation for the firmware
+* **Source code and releases** [`GitHub <https://github.com/cryptnox/cryptnox-pos>`__]
+
+
+-------------------------
+
+
 Cryptnox SDK for Arduino
 =========================
 
