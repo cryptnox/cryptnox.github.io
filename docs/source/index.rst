@@ -125,6 +125,32 @@ card protocol directly.
 -------------------------
 
 
+Cryptnox POS
+=========================
+
+.. raw:: html
+
+   <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+       <rect x="3" y="2" width="18" height="20" rx="2" ry="2"/>
+       <line x1="7" y1="7" x2="17" y2="7"/>
+       <line x1="7" y1="11" x2="17" y2="11"/>
+       <line x1="7" y1="15" x2="11" y2="15"/>
+     </svg>
+   </div>
+
+*Cryptnox POS* is open-source firmware that turns an ESP32 touchscreen board and a PN532 NFC
+module into a crypto payment terminal. The customer taps a Cryptnox Hardware Wallet card, the card
+signs the transfer in its secure element, and the terminal confirms once it is mined on Ethereum,
+Polygon or Tron. Built on the ESP32 SDK, it is a reference dev kit rather than a hardened terminal.
+
+* **Cryptnox POS User Guide** [`HTML <https://docs.cryptnox.com/cryptnox-pos/>`__]
+* **Cryptnox POS API Reference** [`HTML <https://docs.cryptnox.com/cryptnox-pos/api/>`__]
+
+
+-------------------------
+
+
 Cryptnox SDK for Arduino
 =========================
 
