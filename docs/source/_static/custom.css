@@ -135,6 +135,7 @@ a.headerlink { display: none; }
 #smart-card-readers,
 #cryptnox-sdk-for-python,
 #cryptnox-sdk-for-esp32,
+#cryptnox-pos,
 #cryptnox-sdk-for-arduino,
 #cryptnox-sdk-for-c {
     background: #fff;
@@ -174,6 +175,7 @@ a.headerlink { display: none; }
 #smart-card-readers h2,
 #cryptnox-sdk-for-python h2,
 #cryptnox-sdk-for-esp32 h2,
+#cryptnox-pos h2,
 #cryptnox-sdk-for-arduino h2,
 #cryptnox-sdk-for-c h2 {
     font-size: 1.05rem;
@@ -191,6 +193,7 @@ a.headerlink { display: none; }
 #smart-card-readers p,
 #cryptnox-sdk-for-python p,
 #cryptnox-sdk-for-esp32 p,
+#cryptnox-pos p,
 #cryptnox-sdk-for-arduino p,
 #cryptnox-sdk-for-c p {
     color: #6b7a8a;
@@ -207,6 +210,7 @@ a.headerlink { display: none; }
 #smart-card-readers ul,
 #cryptnox-sdk-for-python ul,
 #cryptnox-sdk-for-esp32 ul,
+#cryptnox-pos ul,
 #cryptnox-sdk-for-arduino ul,
 #cryptnox-sdk-for-c ul,
 #other-resources ul {
@@ -223,6 +227,7 @@ a.headerlink { display: none; }
 #smart-card-readers ul li,
 #cryptnox-sdk-for-python ul li,
 #cryptnox-sdk-for-esp32 ul li,
+#cryptnox-pos ul li,
 #cryptnox-sdk-for-arduino ul li,
 #cryptnox-sdk-for-c ul li,
 #other-resources ul li {
@@ -237,6 +242,7 @@ a.headerlink { display: none; }
 #smart-card-readers ul li p,
 #cryptnox-sdk-for-python ul li p,
 #cryptnox-sdk-for-esp32 ul li p,
+#cryptnox-pos ul li p,
 #cryptnox-sdk-for-arduino ul li p,
 #cryptnox-sdk-for-c ul li p {
     margin: 0;
