@@ -236,3 +236,10 @@ Other resources
 -------------------------
 
 ..
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: About
+
+   license

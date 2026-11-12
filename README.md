@@ -6,7 +6,7 @@
 <br/>
 
 [![Documentation status](https://img.shields.io/badge/docs-latest-blue)](https://cryptnox.github.io)
-[![License: GPLv3](https://img.shields.io/badge/License-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 This repository serves as the root of the Cryptnox documentation portal, available at [docs.cryptnox.com](https://docs.cryptnox.com).
 
@@ -61,3 +61,17 @@ docs.cryptnox.com/cryptnox-readers/             → cryptnox/cryptnox-readers
 ## Get your hardware
 
 Cryptnox smart cards and compatible readers are available at [shop.cryptnox.com](https://shop.cryptnox.com).
+
+---
+
+## License
+
+Copyright (C) 2026 Cryptnox SA.
+
+This documentation is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (see [`LICENSE`](LICENSE)):
+
+- **Attribution** for appropriate credit to Cryptnox SA
+- **NonCommercial** for non-commercial use only
+- **NoDerivatives** for unmodified redistribution only
+
+For inquiries, contact: contact@cryptnox.com
