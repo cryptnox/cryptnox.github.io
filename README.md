@@ -19,6 +19,7 @@ This repository serves as the root of the Cryptnox documentation portal, availab
 | [**cryptnox-hardware-wallet**](https://docs.cryptnox.com/cryptnox-hardware-wallet/) | Technical reference for Cryptnox Hardware Wallet smart cards |
 | [**cryptnox-cli**](https://docs.cryptnox.com/cryptnox-cli/) | Command-line interface for managing smart card wallets |
 | [**cryptnox-id-cli**](https://docs.cryptnox.com/cryptnox-id-cli/) | Command-line interface for the Cryptnox ID card family (PIV, FIDO2, MIFARE DESFire, genuineness) |
+| [**cryptnox-shamir**](https://docs.cryptnox.com/cryptnox-shamir/) | Operating manual for splitting a high-value secret across k-of-n smart cards with Shamir Secret Sharing |
 | [**cryptnox-sdk-py**](https://docs.cryptnox.com/cryptnox-sdk-py/) | Python SDK for managing smart card wallets via secure communication |
 | [**cryptnox-sdk-esp32**](https://docs.cryptnox.com/cryptnox-sdk-esp32/) | ESP32 library for managing Cryptnox smart card wallets, based on the C++ core SDK |
 | [**cryptnox-sdk-arduino**](https://docs.cryptnox.com/cryptnox-sdk-arduino/) | Arduino library for managing Cryptnox smart card wallets, based on the C++ core SDK |
@@ -36,6 +37,7 @@ docs.cryptnox.com/                              → cryptnox/cryptnox.github.io
 docs.cryptnox.com/cryptnox-hardware-wallet/     → cryptnox/cryptnox-hardware-wallet
 docs.cryptnox.com/cryptnox-cli/                 → cryptnox/cryptnox-cli
 docs.cryptnox.com/cryptnox-id-cli/              → cryptnox/cryptnox-id-cli
+docs.cryptnox.com/cryptnox-shamir/             → cryptnox/cryptnox-shamir
 docs.cryptnox.com/cryptnox-sdk-py/              → cryptnox/cryptnox-sdk-py
 docs.cryptnox.com/cryptnox-sdk-esp32/           → cryptnox/cryptnox-sdk-esp32
 docs.cryptnox.com/cryptnox-sdk-arduino/         → cryptnox/cryptnox-sdk-arduino
@@ -50,6 +52,7 @@ docs.cryptnox.com/cryptnox-readers/             → cryptnox/cryptnox-readers
 - [cryptnox/cryptnox-hardware-wallet](https://github.com/cryptnox/cryptnox-hardware-wallet)
 - [cryptnox/cryptnox-cli](https://github.com/cryptnox/cryptnox-cli)
 - [cryptnox/cryptnox-id-cli](https://github.com/cryptnox/cryptnox-id-cli)
+- [cryptnox/cryptnox-shamir](https://github.com/cryptnox/cryptnox-shamir)
 - [cryptnox/cryptnox-sdk-py](https://github.com/cryptnox/cryptnox-sdk-py)
 - [cryptnox/cryptnox-sdk-esp32](https://github.com/cryptnox/cryptnox-sdk-esp32)
 - [cryptnox/cryptnox-sdk-arduino](https://github.com/cryptnox/cryptnox-sdk-arduino)

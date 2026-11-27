@@ -79,6 +79,31 @@ the card's genuineness attestation with one tool for every function on the card.
 -------------------------
 
 
+Cryptnox Shamir
+===============
+
+.. raw:: html
+
+   <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+       <circle cx="7.5" cy="15.5" r="5.5"/>
+       <path d="M21 2l-9.6 9.6"/>
+       <path d="M15.5 7.5l3 3L22 7l-3-3"/>
+     </svg>
+   </div>
+
+*Cryptnox Shamir* splits a single high-value secret, such as a Bitcoin treasury key, an HSM
+wrapping key or a recovery seed, across a set of smart cards using Shamir Secret Sharing. Only an
+agreed number of the cards together can rebuild it, for example any 3 of 5, so no single card or
+person ever holds the secret. Everything happens inside the cards, for institutional custody and
+HSM backup.
+
+* **Cryptnox Shamir Operating Manual** [`HTML <https://docs.cryptnox.com/cryptnox-shamir/>`__] [`PDF <https://docs.cryptnox.com/cryptnox-shamir/cryptnox-shamir.pdf>`__]
+
+
+-------------------------
+
+
 Cryptnox SDK for Python
 =========================
 

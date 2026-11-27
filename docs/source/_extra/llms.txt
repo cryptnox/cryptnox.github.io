@@ -42,6 +42,11 @@ doubles as a FIDO2 security key.
 - [Cryptnox CLI User Guide (HTML)](https://docs.cryptnox.com/cryptnox-cli/): installation, supported hardware, command reference, interactive mode, BIP39 passphrase support, exit codes, examples
 - [Cryptnox CLI User Guide (PDF)](https://docs.cryptnox.com/cryptnox-cli/cryptnox-cli.pdf)
 
+## Shamir Secret Sharing card system
+
+- [Cryptnox Shamir Operating Manual (HTML)](https://docs.cryptnox.com/cryptnox-shamir/): split a master secret (Bitcoin treasury key, HSM wrapping key, recovery seed) across k-of-n smart cards with Shamir Secret Sharing; key ceremony, recovery, backup test, choosing parameters, custody governance and checklists, security model, shamir-cli command reference, troubleshooting
+- [Cryptnox Shamir Operating Manual (PDF)](https://docs.cryptnox.com/cryptnox-shamir/cryptnox-shamir.pdf)
+
 ## SDKs
 
 - [Python SDK (HTML)](https://docs.cryptnox.com/cryptnox-sdk-py/): API reference for the cryptnox_sdk_py package, class diagrams, connection components, reader hierarchy
